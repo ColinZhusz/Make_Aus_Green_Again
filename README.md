@@ -1,4 +1,4 @@
-# Make_Aus_Green_Again
+# Make Australia Green Again
 Monash University
 *IE Project
 *Team Name: Social Warriors
