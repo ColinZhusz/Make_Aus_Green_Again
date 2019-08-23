@@ -6,3 +6,12 @@
 body {
   padding-top: 56px;
 }
+
+.header-with-back {
+  background-image: url("/static/MAGA/img/family.jpg");
+  position: relative;
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
