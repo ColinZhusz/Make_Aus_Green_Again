@@ -22,4 +22,4 @@ def cla(request):
     return render_to_response('Classification.html')
 
 def calcu(request):
-    return render_to_response('Calculator.html')
+    return render(request,'Calculator.html')
