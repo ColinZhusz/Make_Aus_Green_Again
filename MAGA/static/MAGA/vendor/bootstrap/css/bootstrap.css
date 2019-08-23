@@ -2421,14 +2421,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #086b00;
+  border-color: #086b00;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #0f8c6b;
+  border-color: #0f8c58;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -9844,8 +9844,16 @@ button.bg-dark:focus {
   font-style: italic !important;
 }
 
+.font-comic {
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
 .text-white {
   color: #fff !important;
+}
+
+.text-limegreen {
+  color: #32CD32 !important;
 }
 
 .text-primary {
