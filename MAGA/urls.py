@@ -17,4 +17,7 @@ urlpatterns = [
     #Transformation
     url(r'Transformation', views.trans, name='transformation'),
 
+    #Calculator
+    url(r'Calculator', views.calcu, name='calculator'),
+
 ]
