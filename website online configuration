@@ -1,0 +1,8 @@
+gunicorn --bind 0.0.0.0:8000 Make_AUS_Green_Again.wsgi:application #在Make_Aus_Green_Again目录下运行可暂时开启服务 通过ip+:8000端口访问
+#在 /etc/supervisor/conf.d目录下检测guni 服务 
+sudo supervisorctl reread 
+                   update
+                   status
+
+/etc/nginx/sites-available sudo nginx -t
+sudo service nginx restart
