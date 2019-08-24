@@ -1,58 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
+{% load staticfiles %}
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Education</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/static/MAGA/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="/static/MAGA/css/business-frontpage.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="{% url 'home' %}">
-            <img src="/static/MAGA/img/MAGA_Logo.gif" alt="logo" height="53" width="100">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'home' %}">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="Education.html">Education</a>
-                    <span class="sr-only">(current)</span>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Information.html">Information</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="Classification.html">Classification</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Transformation.html">Transformation</a>
-                </li> -->
-            </ul>
-        </div>
-    </div>
-</nav>
-
+{% block content %}
 <!-- Header -->
 <header class="bg-primary py-0 mb-5">
     <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
@@ -63,16 +13,16 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="/static/MAGA/img/batteries.png" alt="First slide" class="d-block img-fluid">
+                <img class="d-block w-100" src="{% static 'MAGA/img/batteries.png' %}" alt="First slide" class="d-block img-fluid">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="/static/MAGA/img/bottle-caps.png" alt="Second slide" class="d-block img-fluid">
+                <img class="d-block w-100" src="{% static 'MAGA/img/bottle-caps.png' %}" alt="Second slide" class="d-block img-fluid">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="/static/MAGA/img/coffee-cups.png" alt="Third slide" class="d-block img-fluid">
+                <img class="d-block w-100" src="{% static 'MAGA/img/coffee-cups.png' %}" alt="Third slide" class="d-block img-fluid">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="/static/MAGA/img/landfills.png" alt="Fourth slide" class="d-block img-fluid">
+                <img class="d-block w-100" src="{% static 'MAGA/img/landfills.png' %}" alt="Fourth slide" class="d-block img-fluid">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -90,29 +40,24 @@
 <div class="container">
 
     <div class="row">
-        <div class="main-col">
+        <div class="col-md-12">
             <h2>How does it effect my family</h2>
             <hr>
-
         </div>
     </div>
     <!-- /.row -->
 
     {#    row for kids#}
-
     <div class="row">
-        <div class="col-xs-4 col-sm-4">
-
+        <div class="col-md-4">
             <div class="card h-20">
-                <img class="card-img-top" src="/static/MAGA/img/kids.jpg" alt="kids">
+                <img class="card-img-top" src="{% static 'MAGA/img/kids.jpg' %}" alt="kids">
                 <div class="card-body">
                     {#                    <h4 class="card-title">kids</h4>#}
                 </div>
-
             </div>
-
         </div>
-        <div class="col-xs-4 col-sm-4">
+        <div class="col-md-4">
             <h2>kids</h2>
             <hr>
             <p>How to effect kids
@@ -121,16 +66,9 @@
                 How to effect kids
             </p>
         </div>
-
-        <div class="col-xs-4 col-sm-4">
-
-        </div>
-
         {#    row for money#}
         <div class="row">
-            <div class="col-xs-4 col-sm-4">
-            </div>
-            <div class="col-xs-4 col-sm-4">
+            <div class="col-md-4 offset-md-4">
                 <h2>money</h2>
                 <hr>
                 <p>How to effect money
@@ -139,11 +77,9 @@
                     How to effect money
                 </p>
             </div>
-
-
-            <div class="col-xs-4 col-sm-4">
+            <div class="col-md-4">
                 <div class="card h-15">
-                    <img src="/static/MAGA/img/dollar.png" class="card-img-top"  onclick='window.open("Calculator.html")' >
+                    <img src="{% static 'MAGA/img/dollar.png' %}" class="card-img-top"  onclick='window.open("/MAGA/calculator/")' >
                     <div class="card-body">
                         {#                        <h4 class="card-title">Money</h4>#}
                         {#            <p class="card-text">Data Analyst</p>#}
@@ -151,23 +87,19 @@
                 </div>
 
             </div>
-
         </div>
     </div>
     {#    row for Environment#}
     <div class="row">
-        <div class="col-xs-4 col-sm-4">
-
+        <div class="col-md-4">
             <div class="card h-20">
-                <img class="card-img-top" src="/static/MAGA/img/planet.png" alt="Earth">
+                <img class="card-img-top" src="{% static 'MAGA/img/planet.png' %}" alt="Earth">
                 <div class="card-body">
                     {#                    <h4 class="card-title">Earth</h4>#}
                 </div>
-
             </div>
-
         </div>
-        <div class="col-xs-4 col-sm-4">
+        <div class="col-md-4">
             <h2>Earth</h2>
             <hr>
             <p>How to effect Earth
@@ -176,16 +108,10 @@
                 How to effect Earth
             </p>
         </div>
-
-        <div class="col-xs-4 col-sm-4">
-        </div>
-
     </div>
     {#    row for Furture#}
     <div class="row">
-        <div class="col-xs-4 col-sm-4">
-        </div>
-        <div class="col-xs-4 col-sm-4">
+        <div class="col-md-4 offset-md-4">
             <h2>furture</h2>
             <hr>
             <p>How to effect Furture
@@ -194,10 +120,9 @@
                 How to effect Furture
             </p>
         </div>
-
-        <div class="col-xs-4 col-sm-4">
+        <div class="col-md-4">
             <div class="card h-20">
-                <img class="card-img-top" src="/static/MAGA/img/furture.jpg" alt="furture">
+                <img class="card-img-top" src="{% static 'MAGA/img/furture.jpg' %}" alt="furture">
                 <div class="card-body">
                     {#            <h4 class="card-title">Earth</h4>#}
                     {#            <p class="card-text">Data Analyst</p>#}
@@ -205,28 +130,11 @@
             </div>
 
         </div>
-
     </div>
 </div>
 <!-- /.container -->
-
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Make Our Australia Green Again 2019</p>
-    </div>
-    <!-- /.container -->
-</footer>
-
-<!-- Bootstrap core JavaScript -->
-<script src="/static/MAGA/vendor/jquery/jquery.min.js"></script>
-<script src="/static/MAGA/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 <script>
     // Activate Carousel
     $('.carousel').carousel({interval: 4000});
 </script>
-
-</body>
-
-</html>
+{% endblock %}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Make Our Australia Green Again</title>
+
+  {% load static %}
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'MAGA/vendor/bootstrap/css/bootstrap.css' %}" type="text/css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'MAGA/css/business-frontpage.css' %}"  type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'index' %}">
+          <img src="{% static 'MAGA/img/MAGA_Logo.gif' %}" alt="logo" height="53" width="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'education' %}">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'information' %}">Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'classification' %}">Classification</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'transformation' %}">Transformation</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  {% block content %}
+  {% endblock %}
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Make Our Australia Green Again 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'MAGA/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'MAGA/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

@@ -2,22 +2,21 @@ from django.conf.urls import url
 from MAGA import views
 urlpatterns = [
     #index page
-    url(r'^$', views.index, name='home'),
+    url(r'^$', views.index, name='index'),
 
 	#Education page
-    url(r'Education',views.edu,name = 'education'),
+    url(r'^education/$',views.education,name = 'education'),
 
     #Information page
-    url(r'Information',views.info, name ='information'),
+    url(r'^information/$',views.information, name ='information'),
 
     #Classification
-    url(r'Classification', views.cla, name='classification'),
-
+    url(r'^classification/$', views.classification, name='classification'),
 
     #Transformation
-    url(r'Transformation', views.trans, name='transformation'),
+    url(r'^transformation/$', views.transformation, name='transformation'),
 
     #Calculator
-    url(r'Calculator', views.calcu, name='calculator'),
+    url(r'^calculator/$', views.calculator, name='calculator'),
 
 ]

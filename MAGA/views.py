@@ -1,25 +1,44 @@
-from django.shortcuts import render, render_to_response, redirect  # 导入render和render_to_reponse模块
+from django.shortcuts import render
+from django.utils import timezone
+from django.http import HttpResponse, Http404
+from django.template import RequestContext, loader
 
-# 先定义一个数据列表，当然后面熟了可以从数据库里取出来
-list = [{"name": 'good', 'password': 'python'}, {'name': 'learning', 'password': 'django'}]
-
+appname = 'Make Our Australia Green Again'
 
 def index(request):
-    return render_to_response('index.html')
+    context = {
+        'appname': appname,
+    }
+    return render(request, 'index.html', context)
 
 
-def edu(request):
-  return render_to_response('Education.html')
+def education(request):
+    context = {
+        'appname': appname,
+    }
+    return render(request, 'education.html', context)
 
-def info(request):
-    return render_to_response('Information.html')
+def information(request):
+    context = {
+        'appname': appname,
+    }
+    return render(request, 'information.html', context)
 
 
-def trans(request):
-    return render_to_response('Transformation.html')
+def classification(request):
+    context = {
+        'appname': appname,
+    }
+    return render(request, 'classification.html', context)
 
-def cla(request):
-    return render_to_response('Classification.html')
+def transformation(request):
+    context = {
+        'appname': appname,
+    }
+    return render(request, 'transformation.html', context)
 
-def calcu(request):
-    return render(request,'Calculator.html')
+def calculator(request):
+    context = {
+        'appname': appname,
+    }
+    return render(request, 'calculator.html', context)
