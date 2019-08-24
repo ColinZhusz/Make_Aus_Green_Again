@@ -4,13 +4,13 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
  */
 body {
-  padding-top: 76px;
+  padding-top: 80px;
 }
 
 .header-with-back {
-  background-image: url("/static/MAGA/img/family.jpg");
+  background-image: url("/static/MAGA/img/family3.jpg");
   position: relative;
-  height: 500px; /* You must set a specified height */
+  height: 740px; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
