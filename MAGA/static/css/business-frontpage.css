@@ -9,15 +9,17 @@ body {
 
 .header-with-back {
   background-image: url("/static/img/family3.jpg");
-  position: relative;
+  background-position: center center;
   height: 740px; /* You must set a specified height */
-  background-position: center; /* Center the image */
+  
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .text-home-align-right {
-	position: relative;
+	position: absolute;
 	float: right;
-  	top: -200px;
+	margin-left: 620px;
+  	top: -340px;
 }
+
