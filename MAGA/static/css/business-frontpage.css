@@ -8,7 +8,7 @@ body {
 }
 
 .header-with-back {
-  background-image: url("/static/MAGA/img/family3.jpg");
+  background-image: url("/static/img/family3.jpg");
   position: relative;
   height: 740px; /* You must set a specified height */
   background-position: center; /* Center the image */
