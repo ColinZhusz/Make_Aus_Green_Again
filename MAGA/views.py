@@ -10,7 +10,7 @@ def index(request):
     return redirect("http://18.221.149.227/MAGA/")
 
 #
-# def home(request):
+# def index(request):
 #     context = {
 #         'appname': appname,
 #     }
