@@ -18,6 +18,6 @@ body {
 
 .text-home-align-right {
 	position: relative;
-  	left: 740px;
+	float: right;
   	top: -200px;
 }
