@@ -6,11 +6,6 @@ from django.template import RequestContext, loader
 appname = 'Make Our Australia Green Again'
 
 def index(request):
-#     ...
-#     return redirect("http://18.221.149.227/MAGA/")
-#
-# #
-# # def home(request):
     context = {
         'appname': appname,
     }
