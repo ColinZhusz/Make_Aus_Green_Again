@@ -9854,6 +9854,10 @@ button.bg-dark:focus {
   color: #fff !important;
 }
 
+.text-grey {
+  color: #4f534f !important;
+}
+
 .text-limegreen {
   color: #32CD32 !important;
 }

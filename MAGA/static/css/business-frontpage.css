@@ -15,3 +15,9 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
+
+.text-home-align-right {
+	position: relative;
+  	left: 740px;
+  	top: -200px;
+}
