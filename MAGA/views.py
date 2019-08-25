@@ -1,9 +1,9 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render
 from django.utils import timezone
 from django.http import HttpResponse, Http404
 from django.template import RequestContext, loader
 
-appname = 'Make Our Australia Green Again'
+appname = 'Make Australia Green Again'
 
 def index(request):
     context = {
