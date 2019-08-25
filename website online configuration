@@ -6,3 +6,8 @@ sudo supervisorctl reread
 
 /etc/nginx/sites-available sudo nginx -t
 sudo service nginx restart
+
+//**update
+git pull
+sudo systemctl reload nginx
+**//
