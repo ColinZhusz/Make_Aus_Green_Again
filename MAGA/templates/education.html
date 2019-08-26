@@ -85,6 +85,31 @@
 
     <div class="row">
         <div class="col-md-4 mb-5">
+            <img class="img-fluid" src="{% static 'img/kids_blip.png' %}" alt="kids-edu">
+        </div>        
+        <div class="col-md-4 mb-5">
+            <h2>The Gift of a Green Future</h2>
+            <hr>
+            <p>Perhaps the biggest advantage of proper waste disposal keeping recycling as the
+               focus is the long term effect it has on the environment. With Global Warming
+               affecting the climate, the Earth seems to be heading towards inevitable disaster but
+               proper waste management could help reduce a massive slive of emissions, leaving the Earth
+               safe and fresh for our future generations. Some of the main environmental benefits
+               of proper recycling are given below:
+              <ul>
+                <li>Conservation of Energy, and hence, recycling is a renewable source of energy</li>
+                <li>Greenhouse Gases such as Methane, Carbon Dioxide and Carbon Monoxide are emitted
+                  minimally</li>
+                <li>Conserves natural resources such as timber, water and minerals</li>
+                <li>Prevents pollution by reducing the need to collect new raw materials</li>
+              </ul>
+            </p>
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 mb-5">
             <img class="img-fluid" src="{% static 'img/money_blip.png' %}" alt="money-edu" onclick='window.open("/calculator/")'>
         </div>
         <div class="col-md-4 mb-5">
@@ -104,36 +129,22 @@
               </ul>
             </p>
         </div>
+        <div class="col-md-4 mb-5">
+            <div class="omni-calculator" data-calculator="ecology/plastic-footprint" data-width="360" data-config='{}' data-currency="AUD" data-show-row-controls="false" data-version="3" data-t="1566537827624">
+              <div class="omni-calculator-header">Plastic Footprint Calculator</div>
+              <div class="omni-calculator-footer">
+                <a href="https://www.omnicalculator.com/ecology/plastic-footprint" target="_blank"><img alt="Omni" class="omni-calculator-logo" src="https://cdn.omnicalculator.com/embed/omni-calculator-logo-long.svg" /></a>
+              </div>
+            </div>
+        </div>
+        
     </div>
     <!-- /.row -->
-
-    <div class="row">
-        <div class="col-md-4 offset-md-4 mb-5">
-            <h2>The Gift of a Green Future</h2>
-            <hr>
-            <p>Perhaps the biggest advantage of proper waste disposal keeping recycling as the
-               focus is the long term effect it has on the environment. With Global Warming
-               affecting the climate, the Earth seems to be heading towards inevitable disaster but
-               proper waste management could help reduce a massive slive of emissions, leaving the Earth
-               safe and fresh for our future generations. Some of the main environmental benefits
-               of proper recycling are given below:
-              <ul>
-                <li>Conservation of Energy, and hence, recycling is a renewable source of energy</li>
-                <li>Greenhouse Gases such as Methane, Carbon Dioxide and Carbon Monoxide are emitted
-                  minimally</li>
-                <li>Conserves natural resources such as timber, water and minerals</li>
-                <li>Prevents pollution by reducing the need to collect new raw materials</li>
-              </ul>
-            </p>
-        </div>
-        <div class="col-md-4 mb-5">
-            <img class="img-fluid" src="{% static 'img/kids_blip.png' %}" alt="kids-edu">
-        </div>
-    </div>
 </div>
 <!-- /.container -->
 <script>
     // Activate Carousel
     $('.carousel').carousel({interval: 4000});
 </script>
+<script async src="https://cdn.omnicalculator.com/sdk.js"></script>
 {% endblock %}

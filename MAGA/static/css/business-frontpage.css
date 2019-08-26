@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
  */
 body {
-  padding-top: 80px;
+  padding-top: 75px;
 }
 
 .header-with-back {
@@ -21,4 +21,10 @@ body {
 	float: right;
 	margin-left: 620px;
   	top: -340px;
+}
+
+.omni-calculator{
+    height:450px;
+    overflow:scroll;
+    display:block;
 }
