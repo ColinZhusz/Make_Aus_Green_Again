@@ -11,15 +11,16 @@ body {
   background-image: url("/static/img/family3.jpg");
   background-position: center center;
   height: 740px; /* You must set a specified height */
+  width: 100%;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .text-home-align-right {
-	position: absolute;
+	position: relative;
 	float: right;
 	margin-left: 620px;
-  top: -340px;
+  top: -255px;
 }
 
 .omni-calculator{
