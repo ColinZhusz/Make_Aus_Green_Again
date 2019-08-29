@@ -27,6 +27,7 @@ body {
     height:450px;
     overflow:scroll;
     display:block;
+    width: 100%!important;
 }
 
 /* The flip card container*/
