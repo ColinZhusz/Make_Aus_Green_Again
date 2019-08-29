@@ -4,6 +4,8 @@ urlpatterns = [
     #index page
     url(r'^$', views.index, name='index'),
 
+    url(r'^about/$',views.about,name = 'about'),
+
 	#Education page
     url(r'^education/$',views.education,name = 'education'),
 

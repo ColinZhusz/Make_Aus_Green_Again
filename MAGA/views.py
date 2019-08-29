@@ -11,6 +11,11 @@ def index(request):
     }
     return render(request, 'index.html', context)
 
+def about(request):
+    context = {
+        'appname': appname,
+    }
+    return render(request, 'about.html', context)
 
 def education(request):
     context = {

@@ -3,8 +3,12 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
  */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
 body {
   padding-top: 75px;
+  margin:0;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .header-with-back {
@@ -20,13 +24,61 @@ body {
   position: relative;
   float: right;
   margin-left: 520px;
-  top: -50px;
+  top: -40px;
+}
+
+.bg-white {
+  background-color: #f0f7eb !important;
+  background-opacity: 0.1;
+}
+
+.card-img-caption {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  z-index: 0;
+}
+
+.card-img-caption .card-text {
+
+  text-align: center;
+  width: 100%;
+  margin: 10% 0;
+  position: absolute;
+  z-index: 1;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:50px;
+  color: white;
+}
+
+.btn-wrapper{ 
+  text-align:center; 
+  position:absolute; 
+  bottom: 0px; 
+  margin: 5% auto; 
+  width:100%;
 }
 
 .omni-calculator{
     height:450px;
     overflow:scroll;
     display:block;
+    width: 100%!important;
+<<<<<<< HEAD
+}
+
+.homeimg{
+  height:250px;
+  width: 100%;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+}
+
+.homeimg:hover{
+  transform: scale(1.05);
+=======
+>>>>>>> 8eef9b7cde79b2c8da88536c9b84758a7fbb06e5
 }
 
 /* The flip card container*/
@@ -43,7 +95,7 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 
@@ -62,13 +114,11 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-
   color: white;
   transform: rotateY(180deg);
 }

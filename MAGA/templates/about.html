@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <!-- Header -->
+    <header class="bg-primary py-0 mb-5">
+        <div class="header-with-back">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-12 col-md-11 col-sm-4" >
+                        <h1 class="display-4 text-white text-home-align-right font-weight-bolder mt-5 mb-6">Envisioning A&nbsp;<font color="green">Greener</font> Australia
+                        </h1>
+                        <br>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-md-4 mb-5">
+                      <a class="btn btn-primary btn-lg" href="{% url 'education' %}">Why should I care &#63;</a>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                      <a class="btn btn-primary btn-lg" href="{% url 'information' %}">What should I do &#63;</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Video Content -->
+
+    <div class="container">
+
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <h2>Introduction</h2>
+                <hr>
+                <p>Australia's Waste is an ever-growing issue that millions of Australians
+                  face in their everyday life. Although, unlike several diseases, economic
+                  crisis and mental health issues, the effects of the growing waste aren't
+                    readily apparent. <br><br>
+                    Watch a short video about the project, the background and the need for a change</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/b8YtOUBwsY8" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    <!-- Page Content -->
+
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-md-4 offset-md-4 mb-5">
+                <br>
+                <br>
+                <h2>Our Purpose</h2>
+                <hr>
+                <p>The project 'Make Australia Green Again' was established to assist in educating parents of young children
+                  who want to improve their recycling habits for a better tomorrow. We believe in
+                  leaving behind a sustainable and green Australia for the future Australians
+                  so they can enjoy this beautiful country.' </p>
+            </div>
+            <div class="col-md-4 mb-5">
+                <img class="img-fluid" src="{% static 'img/intro_blip.png' %}" alt="tree1-home">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <img class="img-fluid" src="{% static 'img/goal_blip.png' %}" alt="goal-home">
+            </div>
+            <div class="col-md-4 mb-5">
+                <h2>Our Targets</h2>
+                <hr>
+                <p>The project is aimed at young couples focused on improving their recycling habits and
+                reducing their carbon footprint. We aim at achieving the following milestones:
+                  <ul>
+                    <li>Cleaning Australian Recycle one household at a time</li>
+                    <li>Educating parents and children on proper recycling habits</li>
+                    <li>Providing assistance in waste classification</li>
+                  </ul>
+                </p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-4 offset-md-4 mb-5">
+                <h2>Our Hope</h2>
+                <hr>
+                <p>We hope to improve the life of future Australians by bestowing upon them a sense
+                of proper recycling habits which they can carry over to the future. We hope you enjoy
+                using the product and stay tuned for future updates!</p>
+            </div>
+            <div class="col-md-4 mb-5">
+                <img class="img-fluid" src="{% static 'img/hope_blip.png' %}" alt="world-home">
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <br>
+{% endblock %}
