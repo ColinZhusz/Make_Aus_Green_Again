@@ -76,7 +76,7 @@ body {
     width: 100%!important;
 }
 
-.homeimg{
+/*.homeimg{
   height:250px;
   width: 100%;
   -webkit-transition: all .4s ease-in-out;
@@ -87,7 +87,7 @@ body {
 
 .homeimg:hover{
   transform: scale(1.05);
-}
+}*/
 
 /* The flip card container*/
 .flip-card {
