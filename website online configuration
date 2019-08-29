@@ -11,3 +11,5 @@ sudo service nginx restart
 git pull
 sudo systemctl reload nginx
 **//
+
+gunicorn不成功时候 先去settings.py改allowed host. 在进行supervisor安装
