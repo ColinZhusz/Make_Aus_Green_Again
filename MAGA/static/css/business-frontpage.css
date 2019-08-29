@@ -63,7 +63,6 @@ body {
     overflow:scroll;
     display:block;
     width: 100%!important;
-<<<<<<< HEAD
 }
 
 .homeimg{
@@ -77,8 +76,6 @@ body {
 
 .homeimg:hover{
   transform: scale(1.05);
-=======
->>>>>>> 8eef9b7cde79b2c8da88536c9b84758a7fbb06e5
 }
 
 /* The flip card container*/
