@@ -3,8 +3,12 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
  */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
 body {
   padding-top: 75px;
+  margin:0;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .header-with-back {
@@ -20,7 +24,49 @@ body {
   position: relative;
   float: right;
   margin-left: 520px;
-  top: -50px;
+  top: -40px;
+}
+
+.bg-white {
+  background-color: #f0f7eb !important;
+  background-opacity: 0.1;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* Colorize-zoom Container */
+.img-hover-zoom--colorize img {
+  transition: transform .5s, filter 1.5s ease-in-out;
+  filter: grayscale(50%);
+}
+
+/* The Transformation */
+.img-hover-zoom--colorize:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.imgtext {
+  text-align: center;
+  width: 100%;
+  margin: 20% 0;
+  position: absolute;
+  z-index: 1;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:50px;
+  color: white;
+}
+
+.btn-wrapper{ 
+  text-align:center; 
+  position:absolute; 
+  bottom: 0px; 
+  margin: 10% auto; 
+  width:100%;
 }
 
 .omni-calculator{
@@ -29,6 +75,19 @@ body {
     display:block;
     width: 100%!important;
 }
+
+/*.homeimg{
+  height:250px;
+  width: 100%;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+}
+
+.homeimg:hover{
+  transform: scale(1.05);
+}*/
 
 /* The flip card container*/
 .flip-card {
@@ -44,7 +103,7 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 
@@ -63,13 +122,11 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-
   color: white;
   transform: rotateY(180deg);
 }

@@ -16,6 +16,10 @@
 
   <!-- Custom styles for this template -->
   <link href="{% static 'css/business-frontpage.css' %}"  type="text/css" rel="stylesheet">
+  <script defer src="{% static 'js/tableau.min.js' %}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script async src="https://cdn.omnicalculator.com/sdk.js"></script>
+
 
 </head>
 
@@ -36,17 +40,23 @@
             <a class="nav-link" href="{% url 'index' %}">Home</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="{% url 'education' %}">Education</a>
+            <a class="nav-link" href="{% url 'about' %}">About Us</a>
+          </li>
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="{% url 'calculator' %}">Plastic Calculator</a>
+          </li> -->
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'education' %}">Education Session</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="{% url 'information' %}">Information</a>
+            <a class="nav-link" href="{% url 'information' %}">You may interested</a>
           </li>
-          <li class="nav-item active">
+          <!-- <li class="nav-item active">
             <a class="nav-link" href="{% url 'classification' %}">Classification</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="{% url 'transformation' %}">Transformation</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -67,7 +77,7 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<!--   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script> -->
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 </body>
