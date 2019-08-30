@@ -1,0 +1,29 @@
+# Hello, My friend. Nice to meet you. I am a security member in Saksham's team. 
+#There is a problem for our project. All the configuration is folowed nginx configuration document,
+# and DNS sercice is working for our domain. 
+# When we put our domain name, it shows '400 bad request', However public ip address could get into it. The following 
+# is the login details for our AWS instance, it is a ubuntu 18.04 version. And webserver is nginx installed.
+
+1.download the private key, it should be Kevinkey.pem and put in in Desktop and cd Desktop
+
+2.then type command 
+ssh -i "KevinKey.pem" ubuntu@ec2-52-15-69-68.us-east-2.compute.amazonaws.com
+
+3. you should now get into aws console, then we need to get into virtual environment,
+type command  source /env/bin/activate
+
+4. now there should be a (env) before server name
+
+5. our configuration file for nginx is in this path
+/etc/nginx/sites-enabled/django.conf
+
+6.you can use sudo nano /etc/nginx/sites-enabled/django.conf to edit that
+
+7. you could see in server name part, I already put three items.
+one is our ip address, another two is two domain we have applied.
+
+
+#Saksham has redirected for our website from makeaustralia.green to our public ip address 52.15.69.68
+#it works now. But still, it is not what DNS working right =_=.
+#Thank you for helping us.
+
