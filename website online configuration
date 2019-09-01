@@ -14,3 +14,5 @@ sudo systemctl reload nginx
 
 gunicorn不成功时候 先去settings.py改allowed host. 在进行supervisor安装
 第一次先进行 无静态加载 第二次进行静态加载
+
+gunicorn时 先将所有都试一遍ip domain name出结果在进行下一步
