@@ -20,7 +20,7 @@ install python 3.7
 install django 2.2
 ```
 
-## Built With
+### Built With
 * [Django](https://docs.djangoproject.com/en/2.2/) - The web framework used
 * [Python](https://www.python.org/downloads/release/python-370/) - The programming language used
 * HTML - The programming language used
