@@ -1,7 +1,6 @@
 # Make Australia Green Again
 
-
-## About Project
+## About This Project
 Monash University IE Project
 
 ## Brief Introduction on the Project Team
