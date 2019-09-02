@@ -3,8 +3,10 @@
 ## About This Project
 Monash University IE Project
 
+Our project is about researching, designing and building an interactive way to classify waste correctly with a little magic of Machine Learning. 
+
 ### Brief Introduction on the Project Team
-We are team Social Warriors! A group enthusiastic environmentalists with a vision to create a greener environment for our future generations. Our project is aboutresearching, designing and building an interactive way to classify waste correctly with a little magic of Machine Learning. 
+We are team Social Warriors! A group enthusiastic environmentalists with a vision to create a greener environment for our future generations.
 
 ### Team Name: 
 Social Warriors
