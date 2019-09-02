@@ -3,13 +3,13 @@
 ## About This Project
 Monash University IE Project
 
-## Brief Introduction on the Project Team
+### Brief Introduction on the Project Team
 We are team Social Warriors! A group enthusiastic environmentalists with a vision to create a greener environment for our future generations. Our project is aboutresearching, designing and building an interactive way to classify waste correctly with a little magic of Machine Learning. 
 
-## Team Name: 
+### Team Name: 
 Social Warriors
 
-## Team Member: 
+### Team Member: 
 * Jun Zhu - Lead Developer
 * Saksham Nagpal - Data Analyst
 * Vishaka Baburaj - Business Analyst
