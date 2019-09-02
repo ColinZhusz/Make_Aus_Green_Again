@@ -1,9 +1,8 @@
 # Make Australia Green Again
 Monash University IE Project
 
-We are team Social Warriors!
-
-A group enthusiastic environmentalists with a vision to create a greener environment for our future generations. Our project is aboutresearching, designing and building an interactive way to classify waste correctly with a little magic of Machine Learning. 
+## Brief Introduction on the Project Team
+We are team Social Warriors! A group enthusiastic environmentalists with a vision to create a greener environment for our future generations. Our project is aboutresearching, designing and building an interactive way to classify waste correctly with a little magic of Machine Learning. 
 
 ## Team Name: 
 Social Warriors
