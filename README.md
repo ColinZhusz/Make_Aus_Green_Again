@@ -29,6 +29,3 @@ install django 2.2
 ### Built With
 * [Django](https://docs.djangoproject.com/en/2.2/) - The web framework used
 * [Python](https://www.python.org/downloads/release/python-370/) - The programming language used
-* HTML - The programming language used
-* Javascript - The programming language used
-* CSS3 - The programming language used
