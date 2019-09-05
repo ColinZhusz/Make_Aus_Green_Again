@@ -13,3 +13,11 @@ sudo apt-get install -y supervisor
 cd /etc/supervisor/conf.d/
 sudo touch gunicorn.conf
 sudo nano gunicorn.conf (copy gunicorn configuration)
+sudo mkdir /var/log/gunicorn
+sudo supervisorctl reread
+sudo supervisorctl update
+sudo supervisorctl status
+cd
+cd /etc/nginx/sites-available/
+sudo touch django.conf
+sudo nano django.conf
