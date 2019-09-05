@@ -24,3 +24,6 @@ sudo nano django.conf (copy and paste django.conf)
 sudo nginx -t
 sudo ln django.conf /etc/nginx/sites-enabled/
 sudo service nginx restart
+(copy past /static in django.conf)
+sudo systemctl reload nginx
+
