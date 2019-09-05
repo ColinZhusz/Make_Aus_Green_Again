@@ -20,4 +20,7 @@ sudo supervisorctl status
 cd
 cd /etc/nginx/sites-available/
 sudo touch django.conf
-sudo nano django.conf
+sudo nano django.conf (copy and paste django.conf)
+sudo nginx -t
+sudo ln django.conf /etc/nginx/sites-enabled/
+sudo service nginx restart
