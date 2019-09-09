@@ -79,15 +79,30 @@ body {
 
 }
 
+.imgtexth1 {
+  float:right; 
+  width: 100%;
+  margin: 5% 0;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size:50px;
+}
+
 .imgtext {
   text-align: center;
   width: 100%;
   margin: 20% 0;
   position: absolute;
   z-index: 1;
+  color: white;
   font-family: 'Trebuchet MS', sans-serif;
   font-size:30px;
-  color: white;
+}
+
+.homeimg {
+  filter: grayscale(0%) brightness(80%);
 }
 
 .btn-wrapper{
