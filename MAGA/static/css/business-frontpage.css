@@ -32,24 +32,6 @@ body {
   background-opacity: 0.1;
 }
 
-.social-icons{
-  padding: 10px 0;
-}
-.social-icons a{
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  color: #086b00;
-  text-decoration: none;
-  border-radius: 50%;
-  transition: 0.5s; 
-}
-
-.social-icons a .fa{
-  line-height: 36px;
-}
-
 /* [1] The container */
 .img-hover-zoom {
   height: 300px; /* [1.1] Set it as per your need */
