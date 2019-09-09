@@ -91,6 +91,8 @@ DATABASES = {
     }
 }
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/') # media即为图片上传的根路径
+MEDIA_URL = '/media/'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators

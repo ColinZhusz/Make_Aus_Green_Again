@@ -17,7 +17,7 @@ class Tag(models.Model):
 
 class Uploaded_photo(models.Model):
     id = models.AutoField(primary_key=True)
-    photo_ad = models.CharField(max_length=200,null= False)
+    photo_ad = models.ImageField(upload_to='img')
     photo_tag = models.ManyToManyField(Tag)
     pass
 

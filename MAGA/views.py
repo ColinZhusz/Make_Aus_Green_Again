@@ -3,6 +3,8 @@ from django.utils import timezone
 from django.http import HttpResponse, Http404
 from django.template import RequestContext, loader
 
+from MAGA.models import Uploaded_photo
+
 appname = 'Make Australia Green Again'
 
 def index(request):
@@ -47,3 +49,9 @@ def calculator(request):
         'appname': appname,
     }
     return render(request, 'calculator.html', context)
+
+def uploadImg(request):
+    if request.method == 'POST':
+        img = Uploaded_photo(photo_ad=request.FILES.get('Uploaded_photo'))
+        img.save()
+    return render(request, 'imgupload.html')

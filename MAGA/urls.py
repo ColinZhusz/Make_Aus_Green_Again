@@ -1,5 +1,7 @@
 from django.conf.urls import url
 from MAGA import views
+from MAGA.views import uploadImg
+
 urlpatterns = [
     #index page
     url(r'^$', views.index, name='index'),
@@ -20,5 +22,8 @@ urlpatterns = [
 
     #Calculator
     url(r'^calculator/$', views.calculator, name='calculator'),
+
+    # uploadImg
+    url(r'^uploadImg/$', uploadImg),
 
 ]
