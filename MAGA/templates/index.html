@@ -4,44 +4,69 @@
 
 {% block content %}
 
-<header class="bg-white py-5 mb-5">
-	<div class="container h-100">
+<header class="bg-white py-0 mb-5">
+	<div class="container-fluid h-100">
 		<div class="row no-gutters">
-	        <div class="col-md-6">
+			<div class="col-md-12 d-none d-lg-block">
+	        	<div class="img-hover-zoom">
+	                <img class="homeimg" src="{% static 'img/family3.jpg' %}" alt="">
+	            </div>
+	        </div>
+	    </div>
+	    <div class="row no-gutters">
+	        <div class="col-md-4">
 	        	<div class="img-hover-zoom img-hover-zoom--colorize">
-	        		<p class="imgtext">Our purpose</p>
+	        		<p class="imgtext">Check Your Plastic Consumption</p>
 	                <img class="homeimg" src="{% static 'img/homeimg1.jpg' %}" alt="">
 	                <div class="btn-wrapper">
             			<a href="{% url 'about' %}" class="btn btn-primary">Discover &raquo;</a>
             		</div>
 	            </div>
 	        </div>
-	        <div class="col-md-6">
+	        <div class="col-md-4">
 	        	<div class="img-hover-zoom img-hover-zoom--colorize">
-	        		<p class="imgtext">Check Your Plastic Consumption</p>
+	        		<p class="imgtext">Frequently asked questions</p>
 	                <img class="homeimg" src="{% static 'img/homeimg2.jpg' %}" alt="">
 	                <div class="btn-wrapper">
-            			<a href="{% url 'education' %}" class="btn btn-primary">Calculate &raquo;</a>
+            			<a href="{% url 'education' %}" class="btn btn-primary">Calculate &raquo;</a> <!-- change the picture for the calculator -->
+            		</div>
+	            </div>
+	        </div>
+	        <div class="col-md-4">
+	        	<div class="img-hover-zoom img-hover-zoom--colorize">
+	        		<p class="imgtext">Frequently asked questions</p>
+	                <img class="homeimg" src="{% static 'img/homeimg2.jpg' %}" alt="">
+	                <div class="btn-wrapper">
+            			<a href="{% url 'education' %}" class="btn btn-primary">Calculate &raquo;</a> <!-- change the picture for the calculator -->
             		</div>
 	            </div>
 	        </div>
 	    </div>
 	    <div class="row no-gutters">
-	        <div class="col-md-6">
+	        <div class="col-md-4">
 	        	<div class="img-hover-zoom img-hover-zoom--colorize">
 	        		<p class="imgtext">How Well Do You Know Recycling</p>
 	                <img class="homeimg" src="{% static 'img/homeimg3.jpg' %}" alt="">
 	                <div class="btn-wrapper">
-            			<a href="{% url 'information' %}" class="btn btn-primary">Check your Knowledge &raquo;</a>
+            			<a href="{% url 'information' %}" class="btn btn-primary">Find out &raquo;</a>
             		</div>
 	            </div>
 	        </div>
-	        <div class="col-md-6">
+	        <div class="col-md-4">
 	        	<div class="img-hover-zoom img-hover-zoom--colorize">
-	        		<p class="imgtext">People's Opinions</p>
+	        		<p class="imgtext">Know more about recycling</p>
 	                <img class="homeimg" src="{% static 'img/homeimg4.jpg' %}" alt="">
 	                <div class="btn-wrapper">
-            			<a href="{% url 'education' %}" class="btn btn-primary">Learn More &raquo;</a>
+            			<a href="{% url 'education' %}" class="btn btn-primary">Know More &raquo;</a>
+            		</div>
+	            </div>
+	        </div>
+	        <div class="col-md-4">
+	        	<div class="img-hover-zoom img-hover-zoom--colorize">
+	        		<p class="imgtext">Know more about recycling</p>
+	                <img class="homeimg" src="{% static 'img/homeimg4.jpg' %}" alt="">
+	                <div class="btn-wrapper">
+            			<a href="{% url 'education' %}" class="btn btn-primary">Know More &raquo;</a>
             		</div>
 	            </div>
 	        </div>
@@ -73,12 +98,6 @@
 	          <br>Caulfield East VIC 3145
 	          <br>
 	        </address>
-	        <div class="social-icons">
-		        <a href="#"><i class="fab fa-facebook fa-3x" aria-hidden=true></i></a>
-		        <a href="#"><i class="fab fa-twitter fa-3x" aria-hidden=true></i></a>
-		        <a href="#"><i class="fab fa-google-plus fa-3x" aria-hidden=true></i></a>
-		        <a href="#"><i class="fab fa-instagram fa-3x" aria-hidden=true></i></a>
-		    </div>
 	      </div>
 	    </div>
 	</div>
