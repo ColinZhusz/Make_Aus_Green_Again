@@ -49,16 +49,6 @@ body {
   }
 }
 
-@media (max-width: 991.98px) { 
-  .img-banner{
-  max-height: 25vh; /* [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-  }
-  .img-hover-zoom {
-  max-height: 20vh; /* [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-  } }
-
 .img-hover-zoom {
   height: 30vh; /* [1.1] Set it as per your need */
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
@@ -120,17 +110,6 @@ body {
      margin:8% 0;
   }
 }
-
-@media (max-width: 991.98px) { 
-  .imgtexth1{
-     font-size:30px;
-     margin:10% 0;
-  }
-
-  .imgtext{
-     font-size:20px;
-     margin:10% 0;
-  } }
 
 .homeimg {
   filter: grayscale(0%) brightness(80%);
