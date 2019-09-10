@@ -7,8 +7,8 @@
 <header class="bg-white py-0 mb-5">
 	<div class="container h-100">
 		<div class="row no-gutters">
-			<div class="col-md-12">
-	        	<div class="img-hover-zoom">
+			<div class="col-md-12 col-sm-4">
+	        	<div class="img-banner rounded-sm mx-auto d-block">
 	        		<h1 class="imgtexth1">Recycle To Make A&nbsp;<font color="green">Greener</font> Australia</h1>
 	                <img class="homeimg" src="{% static 'img/banner.jpg' %}" alt="">
 	                <!-- https://pixabay.com/photos/rubbish-basket-waste-paper-trash-3378624/ -->
@@ -20,7 +20,7 @@
 	    </div>
 	    <div class="row no-gutters">
 	        <div class="col-md-6 col-sm-4">
-	        	<div class="img-hover-zoom">
+	        	<div class="img-hover-zoom rounded-sm mx-auto d-block">
 	        			<p class="imgtext">Check Your Plastic Consumption</p>
 	                <img class="homeimg" src="{% static 'img/plastic_bags.jpg' %}" alt="">
 	                <!-- https://pixabay.com/photos/bags-plastic-shopping-household-684857/ -->
@@ -30,7 +30,7 @@
 	            </div>
 	        </div>
 	        <div class="col-md-6 col-sm-4">
-	        	<div class="img-hover-zoom">
+	        	<div class="img-hover-zoom rounded-sm mx-auto d-block">
 	        		<p class="imgtext">How clean is your council</p>
 	                <img class="homeimg" src="{% static 'img/homeimg1.jpg' %}" alt="">
 	                <!-- https://pixabay.com/photos/park-waste-separation-recycling-4337477/ -->
@@ -41,7 +41,7 @@
 	        </div>
 	    </div>
 	    <div class="row no-gutters">
-	        <div class="col-md-6 col-sm-4">
+	        <div class="col-md-6 col-sm-4 rounded-sm mx-auto d-block">
 	        	<div class="img-hover-zoom">
 	        		<p class="imgtext">Play a game to test your knowledge</p>
 	                <img class="homeimg" src="{% static 'img/homeimg3.jpg' %}" alt="">
@@ -52,7 +52,7 @@
 	            </div>
 	        </div>
 	        <div class="col-md-6 col-xs-4">
-	        	<div class="img-hover-zoom">
+	        	<div class="img-hover-zoom rounded-sm mx-auto d-block">
 	        		<p class="imgtext">Click to classify your waste</p>
 	                <img class="homeimg" src="{% static 'img/homeimg4.jpg' %}" alt="">
 	                <!-- https://pixabay.com/photos/recycle-egypt-237874/ -->
@@ -65,34 +65,32 @@
    </div>
 </header>
 
-<body>
-	<div class="container">
-		<div class="row">
-	      <div class="col-md-8 mb-5">
-	        <h2>What We Do</h2>
-	        <hr>
-	        <p>Our aim is to educate young parents to improve their recycling habits to
-							<ul>
-								<li>Educate the future generation of Australians</li>
-								<li>Help Improve the Environment</li>
-								<li>Make a Greener Australia</li>
-							</ul>
-					</p>
-	        <a class="btn btn-primary btn-lg" href="{% url 'about' %}">About Us &raquo;</a>
-	      </div>
-	      <div class="col-md-4 mb-5">
-	        <h2>Contact Us</h2>
-	        <hr>
-	        <address>
-	          <strong>Social Warriors</strong>
-	          <br>900 Dandenong Rd,
-	          <br>Caulfield East VIC 3145
-	          <br>
-	        </address>
-	      </div>
-	    </div>
-	</div>
-</body>
+<div class="container">
+	<div class="row">
+      <div class="col-md-8 mb-5">
+        <h2>What We Do</h2>
+        <hr>
+        <p>Our aim is to educate young parents to improve their recycling habits to
+						<ul>
+							<li>Educate the future generation of Australians</li>
+							<li>Help Improve the Environment</li>
+							<li>Make a Greener Australia</li>
+						</ul>
+				</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'about' %}">About Us &raquo;</a>
+      </div>
+      <div class="col-md-4 mb-5">
+        <h2>Contact Us</h2>
+        <hr>
+        <address>
+          <strong>Social Warriors</strong>
+          <br>900 Dandenong Rd,
+          <br>Caulfield East VIC 3145
+          <br>
+        </address>
+      </div>
+    </div>
+</div>
 
 <br>
 {% endblock %}

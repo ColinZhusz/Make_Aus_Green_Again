@@ -33,8 +33,24 @@ body {
 }
 
 /* [1] The container */
+.img-banner{
+  height: 30vh; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+@media (max-width: 575.98px) {
+ .img-banner{
+  max-height: 25vh; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  .img-hover-zoom {
+  max-height: 15vh; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+}
+
 .img-hover-zoom {
-  height: 300px; /* [1.1] Set it as per your need */
+  height: 30vh; /* [1.1] Set it as per your need */
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
 
@@ -64,7 +80,7 @@ body {
 .imgtexth1 {
   text-align: center; 
   width: 100%;
-  margin: 5% 0;
+  margin: 2.5% 0;
   position: absolute;
   z-index: 1;
   color: white;
@@ -81,6 +97,18 @@ body {
   color: white;
   font-family: 'Trebuchet MS', sans-serif;
   font-size:30px;
+}
+
+@media (max-width: 575.98px) {
+  .imgtexth1{
+     font-size:30px;
+     margin:10% 0;
+  }
+
+  .imgtext{
+     font-size:20px;
+     margin:8% 0;
+  }
 }
 
 .homeimg {
@@ -148,4 +176,20 @@ body {
 .flip-card-back {
   color: white;
   transform: rotateY(180deg);
+}
+
+.max-vh-20{
+  max-height: 20vh !important;
+}
+
+.max-vh-25{
+  max-height: 25vh !important;
+}
+
+.max-vh-30{
+  max-height: 30vh !important;
+}
+
+.max-vh-50{
+  max-height: 50vh !important;
 }
