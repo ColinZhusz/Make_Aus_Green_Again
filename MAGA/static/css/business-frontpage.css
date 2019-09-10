@@ -119,6 +119,14 @@ body {
   text-align: center;
 }
 
+iframe:focus {
+  outline: none;
+}
+
+iframe[seamless] {
+  display: block;
+}
+
 .bounce {
   display: inline-block;
   position: relative;
