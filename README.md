@@ -29,3 +29,4 @@ install django 2.2
 ### Built With
 * [Django](https://docs.djangoproject.com/en/2.2/) - The web framework used
 * [Python](https://www.python.org/downloads/release/python-370/) - The programming language used
+* [AOS](https://github.com/michalsnik/aos)- The library for UI improvement used
