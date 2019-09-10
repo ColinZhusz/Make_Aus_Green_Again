@@ -1,5 +1,7 @@
 from django.conf.urls import url
+from django.views.generic.base import RedirectView
 from MAGA import views
+
 urlpatterns = [
     #index page
     url(r'^$', views.index, name='index'),
@@ -23,5 +25,9 @@ urlpatterns = [
 
     #Card Game
     url(r'^cardgame/$', views.cardgame, name='cardgame'),
+
+    #favicon fix
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon/favicon.ico'),
+)
 
 ]
