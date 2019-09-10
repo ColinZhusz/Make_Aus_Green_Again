@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 mb-5">
+            <br>
+            <h2>How Clean is your Recycle </h2>
+            <hr>
+            <p>Incorrect waste classification causes dirty recycle, causing problems to the environment and the
+                country.
+                <br><b>Use the info-graphic below to find the clean recycle rate of your suburb/council: </b>
+            <ul>
+                <li>Hover over the map to see the clean recycle rate of a council</li>
+                <li>Use the search button on the top right to zoom into a suburb.</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12 col-md-9 col-xs-4 mb-5">
+            <div class='tableauPlaceholder' id='viz1566793819908' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt=' '
+                             src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RecycleRates&#47;Dashboard1&#47;1_rss.png'
+                             style='border: none'/></a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
+                    <param name='embed_code_version' value='3'/>
+                    <param name='site_root' value=''/>
+                    <param name='name' value='RecycleRates&#47;Dashboard1'/>
+                    <param name='tabs' value='no'/>
+                    <param name='toolbar' value='no'/>
+                    <param name='static_image'
+                           value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;RecycleRates&#47;Dashboard1&#47;1.png'/>
+                    <param name='animate_transition' value='yes'/>
+                    <param name='display_static_image' value='yes'/>
+                    <param name='display_spinner' value='yes'/>
+                    <param name='display_overlay' value='yes'/>
+                    <param name='display_count' value='yes'/>
+                    <param name='filter' value='publish=yes'/>
+                </object>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+{% endblock %}

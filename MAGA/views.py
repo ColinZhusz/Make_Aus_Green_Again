@@ -17,17 +17,17 @@ def about(request):
     }
     return render(request, 'about.html', context)
 
-def education(request):
+def whyrecycle(request):
     context = {
         'appname': appname,
     }
-    return render(request, 'education.html', context)
+    return render(request, 'whyrecycle.html', context)
 
-def information(request):
+def council(request):
     context = {
         'appname': appname,
     }
-    return render(request, 'information.html', context)
+    return render(request, 'council.html', context)
 
 
 def classification(request):
@@ -47,3 +47,9 @@ def calculator(request):
         'appname': appname,
     }
     return render(request, 'calculator.html', context)
+
+def cardgame(request):
+    context = {
+        'appname': appname,
+    }
+    return render(request, 'cardgame.html', context)

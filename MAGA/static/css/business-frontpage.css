@@ -49,7 +49,8 @@ body {
   }
 }
 
-@media (max-width: 991.98px) { .img-banner{
+@media (max-width: 991.98px) { 
+  .img-banner{
   max-height: 25vh; /* [1.1] Set it as per your need */
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
   }
@@ -100,7 +101,7 @@ body {
 .imgtext {
   text-align: center;
   width: 100%;
-  margin: 20% 0;
+  margin: 18% 0;
   position: absolute;
   z-index: 1;
   color: white;
@@ -122,13 +123,13 @@ body {
 
 @media (max-width: 991.98px) { 
   .imgtexth1{
-     font-size:50px;
+     font-size:30px;
      margin:10% 0;
   }
 
   .imgtext{
-     font-size:30px;
-     margin:8% 0;
+     font-size:20px;
+     margin:10% 0;
   } }
 
 .homeimg {

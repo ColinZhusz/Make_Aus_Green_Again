@@ -7,10 +7,10 @@ urlpatterns = [
     url(r'^about/$',views.about,name = 'about'),
 
 	#Education page
-    url(r'^education/$',views.education,name = 'education'),
+    url(r'^whyrecycle/$',views.whyrecycle,name = 'whyrecycle'),
 
     #Information page
-    url(r'^information/$',views.information, name ='information'),
+    url(r'^council/$',views.council, name ='council'),
 
     #Classification
     url(r'^classification/$', views.classification, name='classification'),
@@ -20,5 +20,8 @@ urlpatterns = [
 
     #Calculator
     url(r'^calculator/$', views.calculator, name='calculator'),
+
+    #Card Game
+    url(r'^cardgame/$', views.cardgame, name='cardgame'),
 
 ]
