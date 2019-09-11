@@ -23,7 +23,5 @@ urlpatterns = [
     #Calculator
     url(r'^calculator/$', views.calculator, name='calculator'),
 
-    # uploadImg
-    url(r'^uploadImg/$', uploadImg),
 
 ]

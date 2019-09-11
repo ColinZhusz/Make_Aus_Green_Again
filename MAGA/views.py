@@ -54,4 +54,4 @@ def uploadImg(request):
     if request.method == 'POST':
         img = Uploaded_photo(photo_ad=request.FILES.get('Uploaded_photo'))
         img.save()
-    return render(request, 'imgupload.html')
+    return render(request, 'classification.html')

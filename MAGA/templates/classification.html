@@ -1,4 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+    <dir>
+     <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="img">
+        <input type="submit" value="上传">
+    </form>
+    </dir>
 {% endblock %}
