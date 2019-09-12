@@ -27,7 +27,7 @@ urlpatterns = [
     url(r'^calculator/$', views.calculator, name='calculator'),
 
     # upload photo
-    url(r'^classification/$', views.PicUpload.as_view(), name='classification'),
+    # url(r'^classification/$', views.PicUpload.as_view(), name='classification'),
 
     # # show photo
     # re_path(r'^pic/upload/$',
