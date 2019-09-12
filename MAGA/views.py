@@ -50,8 +50,27 @@ def calculator(request):
     }
     return render(request, 'calculator.html', context)
 
-def uploadImg(request):
-    if request.method == 'POST':
-        img = Uploaded_photo(photo_ad=request.FILES.get('Uploaded_photo'))
-        img.save()
-    return render(request, 'classification.html')
+# def uploadImg(request):
+#     if request.method == 'POST':
+#         img = Uploaded_photo(photo_ad=request.FILES.get('Uploaded_photo'))
+#         img.save()
+#     return render(request, 'classification.html')
+
+
+# Create show img views
+from django.views.generic import DetailView, ListView
+from django.views.generic.edit import CreateView
+
+
+class PicList(ListView):
+    queryset = Uploaded_photo.objects.all().order_by('-id')
+    context_object_name = 'latest_picture_list'
+
+
+class PicDetail(DetailView):
+    model = Uploaded_photo
+
+
+class PicUpload(CreateView):
+    model = Uploaded_photo
+    # fields = ['tag', 'image']

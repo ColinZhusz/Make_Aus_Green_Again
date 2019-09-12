@@ -2,11 +2,11 @@
 
 {% block content %}
 
-    <dir>
-     <form action="" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        <input type="file" name="img">
-        <input type="submit" value="上传">
+    <h3>上传新图片</h3>
+    <p><a href="{% url 'PicUpload:PicUpload' %}">上传新图片</a></p>
+    <form method="post" enctype="multipart/form-data">{% csrf_token %}
+           {{ form.as_p }}
+           <input type="submit" value="确定"/>
     </form>
-    </dir>
+
 {% endblock %}
