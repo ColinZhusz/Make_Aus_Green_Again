@@ -22,5 +22,6 @@ mkdir mysite_uwsgi
 cd mysite_uwsgi
 sudo nano mysite.ini
 复制mysite.ini配置文件
-
+在mysite_uwsgi目录下输入指令
+uwsgi --ini /home/ubuntu/mysite_uwsgi/mysite.ini
 
