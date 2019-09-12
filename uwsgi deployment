@@ -24,4 +24,5 @@ sudo nano mysite.ini
 复制mysite.ini配置文件
 在mysite_uwsgi目录下输入指令
 uwsgi --ini /home/ubuntu/mysite_uwsgi/mysite.ini
+ps -aux | grep uwsgi 查看若不止一个结果初始成功
 
