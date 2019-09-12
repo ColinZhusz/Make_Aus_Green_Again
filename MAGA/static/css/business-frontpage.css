@@ -43,6 +43,12 @@ body {
   margin:auto;
 }
 
+@media (max-width: 575.98px) {
+  .arcadegame iframe{
+    sandbox:"allow-scripts";
+  }
+}
+
 .pagination a.active {
   background-color: #4CAF50;
   color: white;
