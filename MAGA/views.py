@@ -36,11 +36,11 @@ def classification(request):
     }
     return render(request, 'classification.html', context)
 
-def transformation(request):
+def facts(request):
     context = {
         'appname': appname,
     }
-    return render(request, 'transformation.html', context)
+    return render(request, 'facts.html', context)
 
 def calculator(request):
     context = {

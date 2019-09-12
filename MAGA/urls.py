@@ -18,7 +18,7 @@ urlpatterns = [
     url(r'^classification/$', views.classification, name='classification'),
 
     #Transformation
-    url(r'^transformation/$', views.transformation, name='transformation'),
+    url(r'^facts/$', views.facts, name='facts'),
 
     #Calculator
     url(r'^calculator/$', views.calculator, name='calculator'),
