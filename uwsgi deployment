@@ -1,0 +1,30 @@
+sudo apt install python3-pip
+sudo apt-get install python3-venv
+python3 -m venv env
+source env/bin/activate
+pip install django
+django-admin.py startproject mysite
+cd mysite
+pip install uwsgi
+sudo touch test.py
+sudo nano test.py (copy file from django tutorial)
+uwsgi --http :8001 --wsgi-file test.py (测试）
+uwsgi --chdir /home/ubuntu/Make_Aus_Green_Again --home /home/ubuntu/env --http :8001 --module=Make_AUS_Green_Again.wsgi:application
+修改 sttings.py中的ip
+sudo apt-get install nginx
+cd /etc/nginx/sites-enabled
+sudo touch mysite.conf
+sudo nano mysite.conf
+copy mysite.conf配置文件
+cd
+在根目录创建一个mysite_uwsgi文件夹
+mkdir mysite_uwsgi
+cd mysite_uwsgi
+sudo nano mysite.ini
+复制mysite.ini配置文件
+在mysite_uwsgi目录下输入指令
+uwsgi --ini /home/ubuntu/mysite_uwsgi/mysite.ini
+ps -aux | grep uwsgi 查看若不止一个结果初始成功
+创建软连接 
+sudo ln -s /etc/nginx/sites-available/mysite.conf /etc/nginx/sites-enabled/mysite.conf
+sudo service nginx restart
