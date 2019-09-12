@@ -25,4 +25,6 @@ sudo nano mysite.ini
 在mysite_uwsgi目录下输入指令
 uwsgi --ini /home/ubuntu/mysite_uwsgi/mysite.ini
 ps -aux | grep uwsgi 查看若不止一个结果初始成功
-
+创建软连接 
+sudo ln -s /etc/nginx/sites-available/mysite.conf /etc/nginx/sites-enabled/mysite.conf
+sudo service nginx restart
