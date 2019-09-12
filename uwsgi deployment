@@ -1,30 +1,28 @@
 sudo apt install python3-pip
 sudo apt-get install python3-venv
 python3 -m venv env
-source env/bin/activate
+source env/bin/activate (go into virtual env)
 pip install django
 django-admin.py startproject mysite
 cd mysite
 pip install uwsgi
 sudo touch test.py
 sudo nano test.py (copy file from django tutorial)
-uwsgi --http :8001 --wsgi-file test.py (测试）
+uwsgi --http :8001 --wsgi-file test.py (for test)
 uwsgi --chdir /home/ubuntu/Make_Aus_Green_Again --home /home/ubuntu/env --http :8001 --module=Make_AUS_Green_Again.wsgi:application
-修改 sttings.py中的ip
+(replace ip in settings.py for public dns)
 sudo apt-get install nginx
 cd /etc/nginx/sites-enabled
 sudo touch mysite.conf
 sudo nano mysite.conf
-copy mysite.conf配置文件
+(copy mysite.conf configuration file to that named mysite.conf)
 cd
-在根目录创建一个mysite_uwsgi文件夹
+create a mysite_uwsgi directory
 mkdir mysite_uwsgi
 cd mysite_uwsgi
 sudo nano mysite.ini
-复制mysite.ini配置文件
-在mysite_uwsgi目录下输入指令
-uwsgi --ini /home/ubuntu/mysite_uwsgi/mysite.ini
-ps -aux | grep uwsgi 查看若不止一个结果初始成功
-创建软连接 
-sudo ln -s /etc/nginx/sites-available/mysite.conf /etc/nginx/sites-enabled/mysite.conf
+(copy mysite.ini configuration file to that named mysite.ini)
+uwsgi --ini /home/ubuntu/mysite_uwsgi/mysite.ini (type this command under mysite_uwsgi directory)
+ps -aux | grep uwsgi (if the result is for or 5, it is succesful)
+sudo ln -s /etc/nginx/sites-available/mysite.conf /etc/nginx/sites-enabled/mysite.conf (create a softlink)
 sudo service nginx restart
