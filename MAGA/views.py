@@ -3,6 +3,8 @@ from django.utils import timezone
 from django.http import HttpResponse, Http404
 from django.template import RequestContext, loader
 
+from MAGA.models import Uploaded_photo
+from . import models
 appname = 'Make Australia Green Again'
 
 def index(request):
@@ -30,11 +32,21 @@ def information(request):
     return render(request, 'information.html', context)
 
 
+# def classification(request):
+#     context = {
+#         'appname': appname,
+#     }
+#
+#     return render(request, 'classification.html', {'img':img})
+
+
+
+
 def classification(request):
     context = {
         'appname': appname,
     }
-    return render(request, 'classification.html', context)
+    return render(request, 'classification.html',context)
 
 def transformation(request):
     context = {
@@ -48,11 +60,11 @@ def calculator(request):
     }
     return render(request, 'calculator.html', context)
 
-# def uploadImg(request):
-#     if request.method == 'POST':
-#         img = Uploaded_photo(photo_ad=request.FILES.get('Uploaded_photo'))
-#         img.save()
-#     return render(request, 'classification.html')
+def uploadImg(request):
+    if request.method == 'POST':
+        img = Uploaded_photo(request.FILES.get('Uploaded_photo'))
+        img.save()
+    return render(request, 'classification.html',{'img':img})
 
 #
 # # Create show img views
