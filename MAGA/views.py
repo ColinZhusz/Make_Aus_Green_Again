@@ -46,6 +46,10 @@ def classification(request):
     context = {
         'appname': appname,
     }
+    if request.method == 'POST':
+        img = Uploaded_photo(request.FILES.get('Uploaded_photo'))
+        img.save()
+
     return render(request, 'classification.html',context)
 
 def transformation(request):
@@ -59,12 +63,10 @@ def calculator(request):
         'appname': appname,
     }
     return render(request, 'calculator.html', context)
-
-def uploadImg(request):
-    if request.method == 'POST':
-        img = Uploaded_photo(request.FILES.get('Uploaded_photo'))
-        img.save()
-    return render(request, 'classification.html',{'img':img})
+#
+# def uploadImg(request):
+#
+#     return render(request, 'classification.html',{'img':img})
 
 #
 # # Create show img views
