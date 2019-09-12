@@ -10,3 +10,8 @@ sudo touch test.py
 sudo nano test.py (copy file from django tutorial)
 uwsgi --http :8001 --wsgi-file test.py (测试）
 uwsgi --chdir /home/ubuu/Make_Aus_Green_Again --home /home/ubuntu/env --http :8001 --module=Make_AUS_Green_Again.wsgi:application
+修改 sttings.py中的ip
+sudo apt-get install nginx
+cd /etc/nginx/sites-enabled
+sudo touch mysite.conf
+sudo nano mysite.conf
