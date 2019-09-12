@@ -42,29 +42,15 @@
           <li class="nav-item active">
             <a class="nav-link" href="{% url 'index' %}">Home</a>
           </li>
-          <!-- <li class="nav-item active">
-            <a class="nav-link" href="{% url 'calculator' %}">Plastic Calculator</a>
-          </li> -->
-          <li class="nav-item dropdown active">
-            <a class="nav-link" href="{% url 'whyrecycle' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Why recycle
-            </a>
-            <div class="dropdown-menu bg-light border-0" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{% url 'calculator' %}">Calculator</a>
-            </div>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'whyrecycle' %}">Why Recycle</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="{% url 'council' %}">Know more</a>
+            <a class="nav-link" href="{% url 'transformation' %}">Know More</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="{% url 'about' %}">FAQ</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'classification' %}">Environment</a>
-          </li>
-          <!-- <li class="nav-item active">
-            <a class="nav-link" href="{% url 'transformation' %}">Transformation</a>
-          </li> -->
         </ul>
       </div>
     </div>
@@ -87,6 +73,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/pages.js' %}"></script>  
 
 </body>
 

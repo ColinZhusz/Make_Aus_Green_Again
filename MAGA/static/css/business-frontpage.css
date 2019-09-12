@@ -27,6 +27,22 @@ body {
   top: -40px;
 }
 
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.page {
+  display: none;
+}
+.page-active {
+  display: block;
+}
+
 .bg-white {
   background-color: #caccc6 !important;
 }
