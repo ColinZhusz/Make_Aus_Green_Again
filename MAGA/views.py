@@ -42,6 +42,12 @@ def facts(request):
     }
     return render(request, 'facts.html', context)
 
+def arcade(request):
+    context = {
+        'appname': appname,
+    }
+    return render(request, 'arcade.html', context)
+
 def calculator(request):
     context = {
         'appname': appname,

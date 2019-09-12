@@ -27,6 +27,22 @@ body {
   top: -40px;
 }
 
+.arcadegame {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.arcadegame iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  margin:auto;
+}
+
 .pagination a.active {
   background-color: #4CAF50;
   color: white;

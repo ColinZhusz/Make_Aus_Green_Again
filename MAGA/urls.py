@@ -17,8 +17,11 @@ urlpatterns = [
     #Classification
     url(r'^classification/$', views.classification, name='classification'),
 
-    #Transformation
+    #Facts
     url(r'^facts/$', views.facts, name='facts'),
+
+    #Recycleman Game
+    url(r'^arcade/$', views.arcade, name='arcade'),
 
     #Calculator
     url(r'^calculator/$', views.calculator, name='calculator'),
