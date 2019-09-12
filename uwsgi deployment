@@ -15,3 +15,4 @@ sudo apt-get install nginx
 cd /etc/nginx/sites-enabled
 sudo touch mysite.conf
 sudo nano mysite.conf
+copy mysite.conf配置文件
