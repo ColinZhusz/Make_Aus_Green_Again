@@ -3,8 +3,6 @@ from django.utils import timezone
 from django.http import HttpResponse, Http404
 from django.template import RequestContext, loader
 
-# from MAGA.models import Uploaded_photo
-
 appname = 'Make Australia Green Again'
 
 def index(request):

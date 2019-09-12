@@ -1,9 +1,6 @@
 from django.conf.urls import url
 from django.urls import path, re_path
 from MAGA import views
-# from MAGA.views import uploadImg
-
-
 
 urlpatterns = [
     # index page
@@ -25,6 +22,7 @@ urlpatterns = [
 
     # Calculator
     url(r'^calculator/$', views.calculator, name='calculator'),
+
 
     # upload photo
     # url(r'^classification/$', views.PicUpload.as_view(), name='classification'),
