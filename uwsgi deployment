@@ -16,3 +16,11 @@ cd /etc/nginx/sites-enabled
 sudo touch mysite.conf
 sudo nano mysite.conf
 copy mysite.conf配置文件
+cd
+在根目录创建一个mysite_uwsgi文件夹
+mkdir mysite_uwsgi
+cd mysite_uwsgi
+sudo nano mysite.ini
+复制mysite.ini配置文件
+
+
