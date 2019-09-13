@@ -26,7 +26,4 @@ urlpatterns = [
     #Card Game
     url(r'^cardgame/$', views.cardgame, name='cardgame'),
 
-    #favicon fix
-    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon/favicon.ico')),
-
 ]
