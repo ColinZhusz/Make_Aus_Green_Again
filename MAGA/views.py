@@ -36,17 +36,11 @@ def classification(request):
     }
     return render(request, 'classification.html', context)
 
-def facts(request):
+def knowledge(request):
     context = {
         'appname': appname,
     }
-    return render(request, 'facts.html', context)
-
-def arcade(request):
-    context = {
-        'appname': appname,
-    }
-    return render(request, 'arcade.html', context)
+    return render(request, 'knowledge.html', context)
 
 def calculator(request):
     context = {

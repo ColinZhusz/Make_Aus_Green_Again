@@ -18,10 +18,7 @@ urlpatterns = [
     url(r'^classification/$', views.classification, name='classification'),
 
     #Facts
-    url(r'^facts/$', views.facts, name='facts'),
-
-    #Recycleman Game
-    url(r'^arcade/$', views.arcade, name='arcade'),
+    url(r'^knowledge/$', views.knowledge, name='knowledge'),
 
     #Calculator
     url(r'^calculator/$', views.calculator, name='calculator'),
