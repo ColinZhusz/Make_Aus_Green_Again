@@ -174,15 +174,6 @@ body {
   text-align: center;
 }
 
-.knowbuttons{
-  text-align:center;
-}
-
-.knowbuttons .btn{
-    position: relative;
-    width: 25%;
-}
-
 iframe:focus {
   outline: none;
 }
