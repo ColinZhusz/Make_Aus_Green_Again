@@ -5,343 +5,57 @@
 {% block content %}
 <br>
 <br>
-<div class="container py-0 mb-5">
+<div class="container py-5 mb-5">
 	<div class="row">
-		<div class="col-md-12 mb-5">
-			<h2>Facts about recycling you may want to know</h1>
+		<div class="col-md-6">
+			<h2>Are you a parent or a child?</h2>
+		</div>
+	</div>
+	<div class="knowbuttons">
+		<a href="javascript:void(0)" class="btn btn-primary kbtn" onclick="divVisibility('factsquiz');">Parent</a> 
+		<a href="javascript:void(0)" class="btn btn-primary kbtn" onclick="divVisibility('childgame');">Child</a> 
+	</div>
+	<br><br>
+	<div id="factsquiz" class="row" style="display: none;">
+		<div class="col-md-10">
+			<h2>Fun facts</h2>
 			<hr>
+			<iframe name="opinionstage-widget" src="https://www.opinionstage.com/api/v1/widgets/567865/iframe?em=1" width="100%" height="1200px" scrolling="no" style="border: none;" frameBorder="0" allow="fullscreen" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
 		</div>
 	</div>
-	<div id="page">
-		<div class="row fact col-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card1.jpg' %}" class="card-img" alt="card1">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;1</h5>
-				        <p class="card-text">
-				        	Enough Plastic Bottles are Tossed Each Year to Circle the Planet Four Times.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6 offset-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card2.jpg' %}" class="card-img" alt="card2">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;2</h5>
-				        <p class="card-text">
-				        	It Takes Centuries for a Disposable Diaper to Break Down in a Landfill.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card3.jpg' %}" class="card-img" alt="card3">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;3</h5>
-				        <p class="card-text">
-				        	5 Billion Styrofoam Cups are Trashed Each Year.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6 offset-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card4.jpg' %}" class="card-img" alt="card4">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;4</h5>
-				        <p class="card-text">
-				        	Recycling Aluminum Cans Saves 95% of the Energy Used to Make New Cans.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card5.jpg' %}" class="card-img " alt="card5">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;5</h5>
-				        <p class="card-text">
-				        	Paper products make up the largest part (approximately 40 percent) of our trash.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6 offset-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card6.jpg' %}" class="card-img" alt="card6">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;6</h5>
-				        <p class="card-text">
-				        	One tree can filter up to 60 pounds of pollutants from the air each year.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card7.jpg' %}" class="card-img" alt="card7">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;7</h5>
-				        <p class="card-text">
-				        	You can recycle aluminum over and over again, and there is really no limit to it.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6 offset-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card8.jpg' %}" class="card-img" alt="card8">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;8</h5>
-				        <p class="card-text">
-				        	If we recycled all newspapers, we could save over 250 million trees each and every year.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card9.jpg' %}" class="card-img" alt="card9">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;9</h5>
-				        <p class="card-text">
-				        	Australia is one of the countries that generate the highest waste amounts.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6 offset-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card10.jpg' %}" class="card-img" alt="card10">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;10</h5>
-				        <p class="card-text">
-				        	Waste materials that are not recycled end up in already densely packed landfills.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card11.jpg' %}" class="card-img " alt="card11">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;11</h5>
-				        <p class="card-text">
-				        	It would take a million years before a glass bottle decomposes.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6 offset-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card12.jpg' %}" class="card-img" alt="card12">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;12</h5>
-				        <p class="card-text">
-				        	Aluminum recycling saves a lot of energy.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card13.jpg' %}" class="card-img" alt="card13">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;13</h5>
-				        <p class="card-text">
-				        	Recycling paper is always the better option than throwing it away.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6 offset-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card14.jpg' %}" class="card-img" alt="card14">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;14</h5>
-				        <p class="card-text">
-				        	In 2008, Australia became the top newspaper recycler in the world.
-				        </p>
-				      </div>
-				  	</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card15.jpg' %}" class="card-img" alt="card15">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;15</h5>
-				        <p class="card-text">
-				        	Plastic bags are one of the major waste materials produced in Australia.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6 offset-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card16.jpg' %}" class="card-img" alt="card16">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;16</h5>
-				        <p class="card-text">
-				        	Around 376,000 tonnes of plastic packaging are used by Australians every year.
-				        </p>
-				      </div>
-				    </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card17.jpg' %}" class="card-img " alt="card17">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;17</h5>
-				        <p class="card-text">
-				        	Every year, about a million sea creatures die because of the plastics disposed into the ocean.
-				        </p>
-				      </div>
-				  </div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row fact col-md-6 offset-md-6">
-			<div class="text-white bg-success mb-3">
-	  			<div class="row no-gutters">
-				    <div class="col-md-4">
-				      <img src="{% static 'img/card18.jpg' %}" class="card-img" alt="card18">
-				    </div>
-				    <div class="col-md-8">
-				      <div class="card-body">
-				        <h5 class="card-title">Fact&#35;18</h5>
-				        <p class="card-text">
-				        	Australia produces a significant amount of electronic waste.
-				        </p>
-				      </div>
-				  	</div>
-				</div>
+	<div id="childgame" class="row" style="display: none;">
+		<div class="col-md-10">
+			<h2>Recycleman</h2>
+			<hr>
+			<div class="arcadegame">
+				<iframe class='arcadeframe' type='text/html' width='640' height='520' src='http://www.stencyl.com/game/embed/40930' frameborder='0' scrolling='no'></iframe>
 			</div>
 		</div>
 	</div>
-
-	<nav aria-label="Fact Pages">
-      <ul class="pagination justify-content-center">
-        <li class="page-item previous-page"><a class="page-link" href="javascript:void(0)">Previous</a></li>
-      </ul>
-    </nav>
 </div>
+
+<script type="text/javascript">
+	var divs = ["factsquiz", "childgame"];
+    var visibleDivId = null;
+    function divVisibility(divId) {
+      if(visibleDivId === divId) {
+        visibleDivId = null;
+      } else {
+        visibleDivId = divId;
+      }
+      hideNonVisibleDivs();
+    }
+    function hideNonVisibleDivs() {
+      var i, divId, div;
+      for(i = 0; i < divs.length; i++) {
+        divId = divs[i];
+        div = document.getElementById(divId);
+        if(visibleDivId === divId) {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      }
+    }
+</script>
 {% endblock %}

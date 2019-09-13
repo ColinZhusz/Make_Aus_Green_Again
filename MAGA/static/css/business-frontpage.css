@@ -20,6 +20,15 @@ body {
   background-repeat: no-repeat; /* Do not repeat the image */
 }
 
+.factsquiz {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right:0;
+    margin:auto;
+}
+
 .text-home-align-right {
   position: relative;
   float: right;
@@ -41,12 +50,6 @@ body {
   left: 0;
   right:0;
   margin:auto;
-}
-
-@media (max-width: 575.98px) {
-  .arcadegame iframe{
-    sandbox:"allow-scripts";
-  }
 }
 
 .pagination a.active {
@@ -169,6 +172,15 @@ body {
   position: relative;
   display: block;
   text-align: center;
+}
+
+.knowbuttons{
+  text-align:center;
+}
+
+.knowbuttons .btn{
+    position: relative;
+    width: 25%;
 }
 
 iframe:focus {
