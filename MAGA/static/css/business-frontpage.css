@@ -118,7 +118,7 @@ body {
 }
 
 .imgtexth1 {
-  text-align: center; 
+  text-align: center;
   width: 100%;
   margin: 8% 0;
   position: absolute;
@@ -167,8 +167,8 @@ body {
 }
 
 .arrowdown{
-  font-size: 48px; 
-  color: green; 
+  font-size: 48px;
+  color: green;
   position: relative;
   display: block;
   text-align: center;
