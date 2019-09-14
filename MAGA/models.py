@@ -22,7 +22,7 @@ class Uploaded_photo(models.Model):
     id = models.AutoField(primary_key=True)
     photo_ad = models.ImageField(upload_to='img')
     photo_tag = models.ManyToManyField(Tag)
-
+    
     def __str__(self):
         return self.id
 

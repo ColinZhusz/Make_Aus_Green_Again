@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -25,12 +24,10 @@ SECRET_KEY = '94=obs1pgr)si@2eca$bcu9ca8=o+&^u!k@s4#d*blj=o2oy6a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
 # ALLOWED_HOSTS update
 # 127.0.0.1 for local developer access
 # 3.15.8.35 for Public IP access
-ALLOWED_HOSTS = ['18.221.149.227','127.0.0.1']
-
+ALLOWED_HOSTS = ['18.221.149.227', '127.0.0.1']
 
 # Application definition
 
@@ -76,7 +73,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Make_AUS_Green_Again.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -84,14 +80,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'maga',
-        'USER':'root',
+        'USER': 'root',
         'PASSWORD': 'root',
-        'HOST':'localhost',
-        'PORT':'3306'
+        'HOST': 'localhost',
+        'PORT': '3306'
 
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -111,7 +106,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
@@ -125,7 +119,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
@@ -135,5 +128,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/')
-# MEDIA_URL = './media/'
+MEDIA_URL = "/media/"
+MEDIA_ROOT = (
+    os.path.join(BASE_DIR, 'media')
+)

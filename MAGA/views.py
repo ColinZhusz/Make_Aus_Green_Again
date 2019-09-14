@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse
+
 from django.utils import timezone
 from django.http import HttpResponse, Http404
 from django.template import RequestContext, loader
@@ -32,25 +33,6 @@ def information(request):
     return render(request, 'information.html', context)
 
 
-# def classification(request):
-#     context = {
-#         'appname': appname,
-#     }
-#
-#     return render(request, 'classification.html', {'img':img})
-
-
-
-
-def classification(request):
-    context = {
-        'appname': appname,
-    }
-    if request.method == 'POST':
-        img = Uploaded_photo(request.FILES.get('Uploaded_photo'))
-        img.save()
-
-    return render(request, 'classification.html',context)
 
 def transformation(request):
     context = {
@@ -63,7 +45,19 @@ def calculator(request):
         'appname': appname,
     }
     return render(request, 'calculator.html', context)
-#
+
+
+def classification(request):
+
+    if request.method == 'POST':
+        img = Uploaded_photo(photo_ad=request.FILES.get('img'))
+        img.save()
+        return HttpResponse('upload ok')
+    context = {
+        'appname': appname,
+    }
+    return render(request, 'classification.html',context)
+
 # def uploadImg(request):
 #
 #     return render(request, 'classification.html',{'img':img})
