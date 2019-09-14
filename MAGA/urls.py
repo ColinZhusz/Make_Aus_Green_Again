@@ -17,7 +17,7 @@ urlpatterns = [
 
     # Classification
     url(r'^classification/$', views.classification, name='classification'),
-    # path(r'^updateinfo/$', views.updateinfo,name='classification'),
+    url(r'^showImg/$', views.showImg, name='showImg'),
     # path('', ClassView.as_view(), name='classification'),
 
     # Transformation

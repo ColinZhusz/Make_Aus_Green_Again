@@ -4,14 +4,19 @@ from django.utils import timezone
 from django.http import HttpResponse, Http404
 from django.template import RequestContext, loader
 
-from MAGA.models import Uploaded_photo
-from . import models
+from MAGA.models import *
 appname = 'Make Australia Green Again'
 
 def index(request):
     context = {
         'appname': appname,
     }
+    ip = request.META['REMOTE_ADDR']
+    if 'HTTP_X_FORWARDED_FOR' in request.META:
+        ip = request.META['HTTP_X_FORWARDED_FOR']
+    user = User(ip_ad=ip)
+    user.save()
+
     return render(request, 'index.html', context)
 
 def about(request):
@@ -58,25 +63,9 @@ def classification(request):
     }
     return render(request, 'classification.html',context)
 
-# def uploadImg(request):
-#
-#     return render(request, 'classification.html',{'img':img})
-
-#
-# # Create show img views
-# from django.views.generic import DetailView, ListView
-# from django.views.generic.edit import CreateView
-#
-#
-# class PicList(ListView):
-#     queryset = Uploaded_photo.objects.all().order_by('-id')
-#     context_object_name = 'latest_picture_list'
-#
-#
-# class PicDetail(DetailView):
-#     model = Uploaded_photo
-#
-#
-# class PicUpload(CreateView):
-#     model = Uploaded_photo
-#     # fields = ['tag', 'image']
+def showImg(request):
+    imgs = Uploaded_photo.objects.all()
+    context = {
+        'img' : imgs
+    }
+    return render(request, 'showImg.html', context)
