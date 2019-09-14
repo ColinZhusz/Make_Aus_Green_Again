@@ -29,6 +29,13 @@ body {
     margin:auto;
 }
 
+.knowbuttons {
+  margin:0 auto;
+  position:relative;
+  display:inline-block;
+  vertical-align:middle;
+ }
+
 .text-home-align-right {
   position: relative;
   float: right;
@@ -50,22 +57,6 @@ body {
   left: 0;
   right:0;
   margin:auto;
-}
-
-.pagination a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
-}
-
-.page {
-  display: none;
-}
-.page-active {
-  display: block;
 }
 
 .bg-white {
