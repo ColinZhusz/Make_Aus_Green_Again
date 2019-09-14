@@ -111,7 +111,7 @@ body {
 .imgtexth1 {
   text-align: center;
   width: 100%;
-  margin: 8% 0;
+  margin: 5% 0;
   position: absolute;
   z-index: 1;
   color: white;
@@ -122,7 +122,7 @@ body {
 .imgtext {
   text-align: center;
   width: 100%;
-  margin: 18% 0;
+  margin: 10% 0;
   position: absolute;
   z-index: 1;
   color: white;
@@ -133,12 +133,12 @@ body {
 @media (max-width: 575.98px) {
   .imgtexth1{
      font-size:17px;
-     margin:25% 0;
+     margin:20% 0;
   }
 
   .imgtext{
      font-size:17px;
-     margin:5% 0;
+     margin:2.5% 0;
   }
 }
 
@@ -253,11 +253,16 @@ iframe[seamless] {
   transform: rotateY(180deg);
 }
 
+.flip-card img{
+  width: 80%;
+  height: 300px;
+}
+
 .flip-card,
 .flip-card-front,
 .flip-card-back {
   width: 100%;
-  height: 480px;
+  height: 400px;
   -webkit-transform-style: preserve-3d;
 }
 
