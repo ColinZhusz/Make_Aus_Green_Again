@@ -11,12 +11,7 @@ def index(request):
     context = {
         'appname': appname,
     }
-    ip = request.META['REMOTE_ADDR']
-    if 'HTTP_X_FORWARDED_FOR' in request.META:
-        ip = request.META['HTTP_X_FORWARDED_FOR']
-    user = User(ip_ad=ip)
-    user.save()
-
+    userCreate(request)
     return render(request, 'index.html', context)
 
 def about(request):
@@ -69,3 +64,15 @@ def showImg(request):
         'img' : imgs
     }
     return render(request, 'showImg.html', context)
+
+def userCreate(request):
+    ip = request.META['REMOTE_ADDR']
+    if 'HTTP_X_FORWARDED_FOR' in request.META:
+        ip = request.META['HTTP_X_FORWARDED_FOR']
+    if User.objects.filter(ip_ad=ip):
+        pass
+    else:
+        user = User(ip_ad=ip)
+        user.save()
+
+    pass
