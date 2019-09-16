@@ -12,7 +12,7 @@ gunicorn --bind 0.0.0.0:8000 Make_AUS_Green_Again.wsgi:application
 sudo apt-get install -y supervisor
 cd /etc/supervisor/conf.d/
 sudo touch gunicorn.conf
-sudo nano gunicorn.conf (copy gunicorn configuration)
+sudo nano gunicorn.conf (copy gunicorn configuration 在azure配置将ubuntu改为Kevin)
 sudo mkdir /var/log/gunicorn
 sudo supervisorctl reread
 sudo supervisorctl update
