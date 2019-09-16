@@ -1,12 +1,14 @@
 from django.conf.urls import url
 from django.views.generic.base import RedirectView
+from django.urls import path, re_path
 from MAGA import views
 
+
 urlpatterns = [
-    #index page
+    # index page
     url(r'^$', views.index, name='index'),
 
-    url(r'^about/$',views.about,name = 'about'),
+    url(r'^about/$', views.about, name='about'),
 
 	#Education page
     url(r'^whyrecycle/$',views.whyrecycle,name = 'whyrecycle'),
@@ -14,13 +16,17 @@ urlpatterns = [
     #Information page
     url(r'^council/$',views.council, name ='council'),
 
-    #Classification
+
+    # Classification
     url(r'^classification/$', views.classification, name='classification'),
+    url(r'^showImg/$', views.showImg, name='showImg'),
+    # path('', ClassView.as_view(), name='classification'),
 
     #Facts
     url(r'^knowledge/$', views.knowledge, name='knowledge'),
 
-    #Calculator
+
+    # Calculator
     url(r'^calculator/$', views.calculator, name='calculator'),
 
     #Card Game
