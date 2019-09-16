@@ -144,7 +144,8 @@ body {
 
 @media (max-width: 991.98px) {
   .dt-logo{
-    width:25vw;
+    width: 25vw;
+    height: 10vh;
   }
 }
 
