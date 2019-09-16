@@ -29,7 +29,7 @@ DEBUG = True
 # ALLOWED_HOSTS update
 # 127.0.0.1 for local developer access
 # 3.15.8.35 for Public IP access
-ALLOWED_HOSTS = ['18.221.149.227','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
