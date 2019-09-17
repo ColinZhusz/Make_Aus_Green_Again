@@ -142,6 +142,13 @@ body {
   }
 }
 
+@media (max-width: 991.98px) {
+  .dt-logo{
+    width: 25%;
+    height: 10%;
+  }
+}
+
 .btw-banner{
   width: 25%;
 }
