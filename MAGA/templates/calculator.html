@@ -19,28 +19,67 @@
   </div>
   <div class="row">
     <div class="col-md-2 col-sm-2 offset-md-1">
-      <img class="img-fluid" src="{% static 'img/bag.png' %}" alt="bag-calc" height="50%">
+      <img class="img-fluid" src="{% static 'img/bag.png' %}" alt="bag-calc" height="50%" id = "pBagImage">
     </div>
     <div class="col-md-2 col-sm-2 offset-md-1">
-
+      <img class="img-fluid" src="{% static 'img/diaper.png' %}" alt="diaper-calc" height="50%" id="DiaperImage">
     </div>
+    <div class="col-md-2 col-sm-2 offset-md-1">
+      <img class="img-fluid" src="{% static 'img/coffee_cups.png' %}" alt="coffee-calc" height="30%" id="CoffeeImage">
     </div>
-    <div class="row text-center">
+    <div class="col-md-2 col-sm-2 offset-md-1">
+      <img class="img-fluid" src="{% static 'img/milk.png' %}" alt="coffee-calc" height="30%" id="MilkImage">
+    </div>
+  </div>
+  <div class="row text-center">
       <div class="col-md-2 col-sm-2 offset-md-1">
         <strong> Plastic Bags </strong>
-    </div>
-    </div>
-    <div class="row">
+      </div>
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <strong> Diapers </strong>
+      </div>
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <strong> Coffee Cups </strong>
+      </div>
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <strong> Milk Bottles </strong>
+      </div>
+  </div>
+  <div class="row">
       <div class="col-md-2 col-sm-2 offset-md-1">
         <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="1" class="slider" id="pBags">
+          <input type="range" min="1" max="15" value="1" class="slider" id="pBags">
         </div>
       </div>
-    </div>
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <div class="slidecontainer">
+          <input type="range" min="1" max="70" value="1" class="slider" id="Diapers">
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <div class="slidecontainer">
+          <input type="range" min="1" max="20" value="1" class="slider" id="Coffee">
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <div class="slidecontainer">
+          <input type="range" min="1" max="5" value="1" class="slider" id="Milk">
+        </div>
+      </div>
+  </div>
     <div class="row text-center">
       <br>
       <div class="col-md-2 col-sm-2 offset-md-1">
-        <output type="text" id="pBagsValue" value="">0</output>
+        <output type="text" id="pBagsValue" value="">1</output>
+      </div>
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <output type="text" id="DiapersValue" value="">1</output>
+      </div>
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <output type="text" id="CoffeeValue" value="">1</output>
+      </div>
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <output type="text" id="MilkValue" value="">1</output>
       </div>
     </div>
 
