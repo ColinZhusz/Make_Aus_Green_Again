@@ -37,7 +37,10 @@ window.onload = function()
               13.96*parseInt(coffee_slider.value)*52 +
               22*parseInt(milk_slider.value)*52;
     co2_scale.innerHTML = (co2/1000).toFixed(2);
+
+    // calculate impact alternatives
     document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
+    document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
 
     //Make the smoke more opaque as the value increases
     var co2_perc = ((co2/1000).toFixed(2)/40);
@@ -58,6 +61,7 @@ window.onload = function()
               22*parseInt(milk_slider.value)*52;
     co2_scale.innerHTML = (co2/1000).toFixed(2);
     document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
+    document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
 
     var co2_perc = ((co2/1000).toFixed(2)/40);
     document.getElementById("earth-base").style.opacity = co2_perc.toString();
@@ -75,6 +79,7 @@ window.onload = function()
               22*parseInt(milk_slider.value)*52;
     co2_scale.innerHTML = (co2/1000).toFixed(2);
     document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
+    document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
 
     var co2_perc = ((co2/1000).toFixed(2)/40);
     document.getElementById("earth-base").style.opacity = co2_perc;
@@ -93,6 +98,7 @@ window.onload = function()
               22*parseInt(milk_slider.value)*52;
     co2_scale.innerHTML = (co2/1000).toFixed(2);
     document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
+    document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
 
     var co2_perc = ((co2/1000).toFixed(2)/40);
     document.getElementById("earth-base").style.opacity = co2_perc;
