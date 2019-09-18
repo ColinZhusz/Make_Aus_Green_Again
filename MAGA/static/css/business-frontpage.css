@@ -351,3 +351,7 @@ iframe[seamless] {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.TreeCO2 {
+  color: Green;
+}
