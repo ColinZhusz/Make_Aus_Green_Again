@@ -11,61 +11,69 @@
       <h1>Check your plastic footprint</h1>
       <hr>
       <p><strong> Your carbon footprint has an immense impact on the world</strong></p>
-      <br>
       <p>Even though it is hard to comprehend, the use of certain household items everyday has
         a compounding effect on the world's total carbon footprint. </p>
       <p>Enter the <strong>approximate weekly</strong> usage of these common household items to get an estimate of your plastic footprint.<br></p>
     </div>
   </div>
-  <div class="row text-center mb-2">
-    <div class="col-md-2 col-sm-2 offset-md-1">
-      <img class="img-fluid" src="{% static 'img/bag.png' %}" alt="bag-calc" height="50%" id = "pBagImage">
-      <strong> Plastic Bags </strong>
-      <div class="slidecontainer">
-        <input type="range" min="0" max="15" value="0" class="slider" id="pBags">
+  <section class="container-child">
+    <div class="row text-center mb-2">
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <img class="img-fluid" src="{% static 'img/bag.png' %}" alt="bag-calc" height="50%" id = "pBagImage">
+        <strong> Plastic Bags </strong>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="15" value="0" class="slider" id="pBags">
+        </div>
+        <output type="text" id="pBagsValue" value="">0</output> / week
       </div>
-      <output type="text" id="pBagsValue" value="">0</output> / week
-    </div>
-    <div class="col-md-2 col-sm-2 offset-md-1">
-      <img class="img-fluid" src="{% static 'img/diaper.png' %}" alt="diaper-calc" height="50%" id="DiaperImage">
-      <strong> Diapers </strong>
-      <div class="slidecontainer">
-        <input type="range" min="0" max="70" value="0" class="slider" id="Diapers">
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <img class="img-fluid" src="{% static 'img/diaper.png' %}" alt="diaper-calc" height="50%" id="DiaperImage">
+        <strong> Diapers </strong>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="70" value="0" class="slider" id="Diapers">
+        </div>
+        <output type="text" id="DiapersValue" value="">0</output> / week
       </div>
-      <output type="text" id="DiapersValue" value="">0</output> / week
-    </div>
-    <div class="col-md-2 col-sm-2 offset-md-1">
-      <img class="img-fluid" src="{% static 'img/coffee_cups.png' %}" alt="coffee-calc" height="30%" id="CoffeeImage">
-      <strong> Coffee Cups </strong>
-      <div class="slidecontainer">
-        <input type="range" min="0" max="20" value="0" class="slider" id="Coffee">
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <img class="img-fluid" src="{% static 'img/coffee_cups.png' %}" alt="coffee-calc" height="30%" id="CoffeeImage">
+        <strong> Coffee Cups </strong>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="20" value="0" class="slider" id="Coffee">
+        </div>
+        <output type="text" id="CoffeeValue" value="">0</output> / week
       </div>
-      <output type="text" id="CoffeeValue" value="">0</output> / week
-    </div>
-    <div class="col-md-2 col-sm-2 offset-md-1">
-      <img class="img-fluid" src="{% static 'img/milk.png' %}" alt="coffee-calc" height="30%" id="MilkImage">
-      <strong> Milk Bottles </strong>
-      <div class="slidecontainer">
-        <input type="range" min="0" max="5" value="0" class="slider" id="Milk">
-      </div>
-      <output type="text" id="MilkValue" value="">0</output> / week
-    </div>
-  </div>
-    <div class="row">
-      <div class="col-md-2 col-sm-2 offset-md-1 layered_earth">
-        <img class="impact_top img-fluid" src="{% static 'img/co2.png' %}" alt="bag-calc" height="50%" id = "earth-base">
-      </div>
-      <div class="col-md-7 offset-md-1">
-        <h1><output type="text" id="CO2Value" value="">0</output>Kgs of CO<sub>2</sub> produced</h1>
-        That's an equivalent of what <strong><output style= "color:green" type="text" id="TreeCO2Val" value="">0</output></strong> tree(s) will absorb in a year
-        <br>or what a car will produce while travelling <strong><output style= "color:green" type="text" id="CarCO2Val" value="">0</output></strong> kilometers!
+      <div class="col-md-2 col-sm-2 offset-md-1">
+        <img class="img-fluid" src="{% static 'img/milk.png' %}" alt="coffee-calc" height="30%" id="MilkImage">
+        <strong> Milk Bottles </strong>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="5" value="0" class="slider" id="Milk">
+        </div>
+        <output type="text" id="MilkValue" value="">0</output> / week
       </div>
     </div>
-    <div class="row text-center">
-      <div class="col-md-3 col-sm-2 offset-md-1">
-        <br>
+      <div class="row">
+        <div class="col-md-2 col-sm-2 offset-md-1 layered_earth">
+          <img class="impact_top img-fluid" src="{% static 'img/co2.png' %}" alt="bag-calc" height="50%" id = "earth-base">
+        </div>
+        <div class="col-md-8 offset-md-1">
+          <br><h1><output type="text" id="CO2Value" value="">0</output>Kgs of CO<sub>2</sub> produced per year<sup>*</sup></h1>
+          <br>That's an equivalent of what <strong><output style= "color:green" type="text" id="TreeCO2Val" value="">0</output></strong> tree(s) will absorb in a year
+          <br>or what a car will produce while travelling <strong><output style= "color:green" type="text" id="CarCO2Val" value="">0</output></strong> kilometers!
+          <br><strong><output type="text" id="CO2result" value=""></output></strong>
+        </div>
       </div>
-    </div>
+      <div class="row text-center">
+        <div class="col-md-8 offset-md-1">
+          <br><br><br><h1><output type="text" id="TreeValue" value="">0</output> trees cut per year<sup>*</sup></h1>
+          That's an equivalent of what <strong><output style= "color:green" type="text" id="TreeCO2Val" value="">0</output></strong> tree(s) will absorb in a year
+          <br>or what a car will produce while travelling <strong><output style= "color:green" type="text" id="CarCO2Val" value="">0</output></strong> kilometers!
+        </div>
+        <div class="col-md-2 col-sm-2 offset-md-1">
+          <br>
+          <img class="img-fluid" src="{% static 'img/tree.png' %}" alt="tree-calc" height="30%" id="TreeImage">
+        </div>
 
+      </div>
+  </section>
 </div>
 {% endblock %}

@@ -355,3 +355,11 @@ iframe[seamless] {
 .TreeCO2 {
   color: Green;
 }
+
+.container {
+  scroll-snap-type: mandatory;
+}
+
+.container-child {
+  scroll-behavior: smooth;
+}

@@ -20,6 +20,7 @@ window.onload = function()
 
   //Get the values of the impact scales
   var co2_scale = document.getElementById("CO2Value");
+  var tree_scale = document.getElementById("TreeValue");
 
   // Define the functions to change the value and the grayscale percentage
   pbag_slider.oninput = function()
@@ -38,9 +39,26 @@ window.onload = function()
               22*parseInt(milk_slider.value)*52;
     co2_scale.innerHTML = (co2/1000).toFixed(2);
 
+    //Set the tree scale values
+    var trees = 0.0016*parseInt(pbag_slider.value)*52 +
+              0.0057*parseInt(diaper_slider.value)*52 +
+              0.0014*parseInt(coffee_slider.value)*52 +
+              0.0021*parseInt(milk_slider.value)*52;
+    tree_scale.innerHTML = (trees).toFixed(2);
+
     // calculate impact alternatives
     document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
     document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
+
+    // compare with the national average
+    if ((co2/1000) > 22 ){
+      document.getElementById("CO2result").innerHTML = "You exceed the national average of 22Kg per year for these items";
+      document.getElementById("CO2result").style.color = "red";
+    }
+    else {
+      document.getElementById("CO2result").style.color = "green";
+      document.getElementById("CO2result").innerHTML = "You are under the national average of 22Kg per year for these items";
+    }
 
     //Make the smoke more opaque as the value increases
     var co2_perc = ((co2/1000).toFixed(2)/40);
@@ -63,6 +81,23 @@ window.onload = function()
     document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
     document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
 
+    //Set the tree scale values
+    var trees = 0.0016*parseInt(pbag_slider.value)*52 +
+              0.0057*parseInt(diaper_slider.value)*52 +
+              0.0014*parseInt(coffee_slider.value)*52 +
+              0.0021*parseInt(milk_slider.value)*52;
+    tree_scale.innerHTML = (trees).toFixed(2);
+
+    // compare with the national average
+    if ((co2/1000) > 22 ){
+      document.getElementById("CO2result").innerHTML = "You exceed the national average of 22Kg per year for these items";
+      document.getElementById("CO2result").style.color = "red";
+    }
+    else {
+      document.getElementById("CO2result").style.color = "green";
+      document.getElementById("CO2result").innerHTML = "You are under the national average of 22Kg per year for these items";
+    }
+
     var co2_perc = ((co2/1000).toFixed(2)/40);
     document.getElementById("earth-base").style.opacity = co2_perc.toString();
   }
@@ -80,6 +115,23 @@ window.onload = function()
     co2_scale.innerHTML = (co2/1000).toFixed(2);
     document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
     document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
+
+    //Set the tree scale values
+    var trees = 0.0016*parseInt(pbag_slider.value)*52 +
+              0.0057*parseInt(diaper_slider.value)*52 +
+              0.0014*parseInt(coffee_slider.value)*52 +
+              0.0021*parseInt(milk_slider.value)*52;
+    tree_scale.innerHTML = (trees).toFixed(2);
+
+    // compare with the national average
+    if ((co2/1000) > 22 ){
+      document.getElementById("CO2result").innerHTML = "You exceed the national average of 22Kg per year for these items";
+      document.getElementById("CO2result").style.color = "red";
+    }
+    else {
+      document.getElementById("CO2result").style.color = "green";
+      document.getElementById("CO2result").innerHTML = "You are under the national average of 22Kg per year for these items";
+    }
 
     var co2_perc = ((co2/1000).toFixed(2)/40);
     document.getElementById("earth-base").style.opacity = co2_perc;
@@ -99,6 +151,23 @@ window.onload = function()
     co2_scale.innerHTML = (co2/1000).toFixed(2);
     document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
     document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
+
+    //Set the tree scale values
+    var trees = 0.0016*parseInt(pbag_slider.value)*52 +
+              0.0057*parseInt(diaper_slider.value)*52 +
+              0.0014*parseInt(coffee_slider.value)*52 +
+              0.0021*parseInt(milk_slider.value)*52;
+    tree_scale.innerHTML = (trees).toFixed(2);
+
+    // compare with the national average
+    if ((co2/1000) > 22 ){
+      document.getElementById("CO2result").innerHTML = "You exceed the national average of 22Kg per year for these items";
+      document.getElementById("CO2result").style.color = "red";
+    }
+    else {
+      document.getElementById("CO2result").style.color = "green";
+      document.getElementById("CO2result").innerHTML = "You are under the national average of 22Kg per year for these items";
+    }
 
     var co2_perc = ((co2/1000).toFixed(2)/40);
     document.getElementById("earth-base").style.opacity = co2_perc;
