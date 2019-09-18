@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block content %}
-<script src="{% static 'js/slider.js' %}"></script>
+<script src="{% static 'js/slider1.js' %}"></script>
 <div class="container">
   <div class="row">
     <div class="col-md-12 col-sm-4">
@@ -82,8 +82,13 @@
         <output type="text" id="MilkValue" value="">1</output>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-2 offset-md-1 layered_earth">
+        <img class="impact_top img-fluid" src="{% static 'img/co2.png' %}" alt="bag-calc" height="50%" id = "earth-base">
+      </div>
+    </div>
     <div class="row text-center">
-      <div class="col-md-2 col-sm-2 offset-md-1">
+      <div class="col-md-3 col-sm-2 offset-md-1">
         <output type="text" id="CO2Value" value="">0</output>
       </div>
     </div>

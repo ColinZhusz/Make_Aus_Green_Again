@@ -345,3 +345,9 @@ iframe[seamless] {
   background: #4CAF50; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
+
+.layered_earth {
+  background-image: url("/static/img/blank_earth.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
