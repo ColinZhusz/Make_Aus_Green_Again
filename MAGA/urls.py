@@ -14,8 +14,10 @@ urlpatterns = [
     #Information page
     url(r'^council/$',views.council, name ='council'),
 
-    #Classification
+    # Classification
     url(r'^classification/$', views.classification, name='classification'),
+    url(r'^showImg/$', views.showImg, name='showImg'),
+    # path('', ClassView.as_view(), name='classification'),
 
     #Facts
     url(r'^knowledge/$', views.knowledge, name='knowledge'),
