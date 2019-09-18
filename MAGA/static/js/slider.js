@@ -6,6 +6,8 @@ window.onload = function()
   document.getElementById("CoffeeImage").style.filter = "grayscale(100%)";
   document.getElementById("MilkImage").style.filter = "grayscale(100%)";
 
+  document.getElementById("earth-base").style.opacity = "0.0";
+
   // Get the values of the sliders and the text elements
   var pbag_slider = document.getElementById("pBags"); // Plastic Bag slider
   var pbagval_output = document.getElementById("pBagsValue"); // Plastic bag value
@@ -24,15 +26,28 @@ window.onload = function()
   {
     // Update the value below the slider
     pbagval_output.innerHTML = this.value;
-    console.log("hello")
+
     //Set grayscale value
     var grey = (((15 - this.value)/15)*100).toString();
     document.getElementById("pBagImage").style.filter = "grayscale("+grey+"%)";
 
     //Set the CO2 scale values
-    var co2 = 15*pbag_slider.value + 157*diaper_slider.value + 32.96*coffee_slider.value + 45*milk_slider;
-    co2_scale.innerHTML = co2;
+    var co2 = 8*parseInt(pbag_slider.value)*52 +
+              9*parseInt(diaper_slider.value)*52 +
+              13.96*parseInt(coffee_slider.value)*52 +
+              22*parseInt(milk_slider.value)*52;
+    co2_scale.innerHTML = (co2/1000).toFixed(2);
+
+    // calculate impact alternatives
+    document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
+    document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
+
+    //Make the smoke more opaque as the value increases
+    var co2_perc = ((co2/1000).toFixed(2)/40);
+    document.getElementById("earth-base").style.opacity = co2_perc;
   }
+
+
   diaper_slider.oninput = function()
   {
     diaper_output.innerHTML = this.value;
@@ -40,9 +55,16 @@ window.onload = function()
     document.getElementById("DiaperImage").style.filter = "grayscale("+grey+"%)";
 
     //Set the CO2 scale values
-    var co2 = 15*pbag_slider.value + 157*diaper_slider.value + 32.96*coffee_slider.value + 45*milk_slider;
-    co2_scale.innerHTML = co2;
-    console.log(co2);
+    var co2 = 8*parseInt(pbag_slider.value)*52 +
+              9*parseInt(diaper_slider.value)*52 +
+              13.96*parseInt(coffee_slider.value)*52 +
+              22*parseInt(milk_slider.value)*52;
+    co2_scale.innerHTML = (co2/1000).toFixed(2);
+    document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
+    document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
+
+    var co2_perc = ((co2/1000).toFixed(2)/40);
+    document.getElementById("earth-base").style.opacity = co2_perc.toString();
   }
   coffee_slider.oninput = function()
   {
@@ -51,9 +73,17 @@ window.onload = function()
     document.getElementById("CoffeeImage").style.filter = "grayscale("+grey+"%)";
 
     //Set the CO2 scale values
-    var co2 = 15*pbag_slider.value + 157*diaper_slider.value + 32.96*coffee_slider.value + 45*milk_slider;
-    co2_scale.innerHTML = co2;
-    console.log(co2);
+    var co2 = 8*parseInt(pbag_slider.value)*52 +
+              9*parseInt(diaper_slider.value)*52 +
+              13.96*parseInt(coffee_slider.value)*52 +
+              22*parseInt(milk_slider.value)*52;
+    co2_scale.innerHTML = (co2/1000).toFixed(2);
+    document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
+    document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
+
+    var co2_perc = ((co2/1000).toFixed(2)/40);
+    document.getElementById("earth-base").style.opacity = co2_perc;
+
   }
   milk_slider.oninput = function()
   {
@@ -62,9 +92,15 @@ window.onload = function()
     document.getElementById("MilkImage").style.filter = "grayscale("+grey+"%)";
 
     //Set the CO2 scale values
-    var co2 = 15*pbag_slider.value + 157*diaper_slider.value +
-    32.96*coffee_slider.value + 45*milk_slider;
-    co2_scale.innerHTML = co2;
-    console.log(co2);
+    var co2 = 8*parseInt(pbag_slider.value)*52 +
+              9*parseInt(diaper_slider.value)*52 +
+              13.96*parseInt(coffee_slider.value)*52 +
+              22*parseInt(milk_slider.value)*52;
+    co2_scale.innerHTML = (co2/1000).toFixed(2);
+    document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
+    document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
+
+    var co2_perc = ((co2/1000).toFixed(2)/40);
+    document.getElementById("earth-base").style.opacity = co2_perc;
   }
 }
