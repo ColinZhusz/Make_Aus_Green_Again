@@ -46,9 +46,16 @@ window.onload = function()
               0.0021*parseInt(milk_slider.value)*52;
     tree_scale.innerHTML = (trees).toFixed(2);
 
+    // Set grayscale for the tree image according to the value
+    var gray_trees = (trees/20)*100;
+    console.log(trees)
+    console.log(gray_trees);
+    document.getElementById("TreeImage").style.filter = "grayscale("+gray_trees+"%)";
+
     // calculate impact alternatives
     document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
     document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
+    document.getElementById("TreeOxyVal").innerHTML = (trees/2).toFixed(2);
 
     // compare with the national average
     if ((co2/1000) > 22 ){
@@ -88,6 +95,13 @@ window.onload = function()
               0.0021*parseInt(milk_slider.value)*52;
     tree_scale.innerHTML = (trees).toFixed(2);
 
+    // Set grayscale for the tree image according to the value
+    var gray_trees = (trees/20)*100;
+    console.log(trees)
+    console.log(gray_trees);
+    document.getElementById("TreeImage").style.filter = "grayscale("+gray_trees+"%)";
+    document.getElementById("TreeOxyVal").innerHTML = (trees/2).toFixed(2);
+
     // compare with the national average
     if ((co2/1000) > 22 ){
       document.getElementById("CO2result").innerHTML = "You exceed the national average of 22Kg per year for these items";
@@ -122,6 +136,13 @@ window.onload = function()
               0.0014*parseInt(coffee_slider.value)*52 +
               0.0021*parseInt(milk_slider.value)*52;
     tree_scale.innerHTML = (trees).toFixed(2);
+
+    // Set grayscale for the tree image according to the value
+    var gray_trees = (trees/20)*100;
+    console.log(trees)
+    console.log(gray_trees);
+    document.getElementById("TreeImage").style.filter = "grayscale("+gray_trees+"%)";
+    document.getElementById("TreeOxyVal").innerHTML = (trees/2).toFixed(2);
 
     // compare with the national average
     if ((co2/1000) > 22 ){
@@ -159,6 +180,12 @@ window.onload = function()
               0.0021*parseInt(milk_slider.value)*52;
     tree_scale.innerHTML = (trees).toFixed(2);
 
+    // Set grayscale for the tree image according to the value
+    var gray_trees = (trees/20)*100;
+    console.log(trees)
+    console.log(gray_trees);
+    document.getElementById("TreeImage").style.filter = "grayscale("+gray_trees+"%)";
+    document.getElementById("TreeOxyVal").innerHTML = (trees/2).toFixed(2);
     // compare with the national average
     if ((co2/1000) > 22 ){
       document.getElementById("CO2result").innerHTML = "You exceed the national average of 22Kg per year for these items";
