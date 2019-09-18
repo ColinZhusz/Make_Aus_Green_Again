@@ -38,9 +38,12 @@ window.onload = function()
               22*parseInt(milk_slider.value)*52;
     co2_scale.innerHTML = (co2/1000).toFixed(2);
 
+    //Make the smoke more opaque as the value increases
     var co2_perc = ((co2/1000).toFixed(2)/40);
     document.getElementById("earth-base").style.opacity = co2_perc;
   }
+
+
   diaper_slider.oninput = function()
   {
     diaper_output.innerHTML = this.value;
