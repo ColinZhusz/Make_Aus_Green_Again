@@ -16,7 +16,6 @@ urlpatterns = [
     #Information page
     url(r'^council/$',views.council, name ='council'),
 
-
     # Classification
     url(r'^classification/$', views.classification, name='classification'),
     url(r'^showImg/$', views.showImg, name='showImg'),
