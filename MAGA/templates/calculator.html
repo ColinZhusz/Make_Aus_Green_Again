@@ -13,7 +13,7 @@
       <p><strong> Your carbon footprint has an immense impact on the world</strong></p>
       <p>Even though it is hard to comprehend, the use of certain household items everyday has
         a compounding effect on the world's total carbon footprint. </p>
-      <p>Enter the <strong>approximate weekly</strong> usage of these common household items to get an estimate of your plastic footprint.<br></p>
+      <p>Enter the <strong>approximate weekly</strong> usage of these common household items to get an estimate of your impact on the environment:<br></p>
     </div>
   </div>
   <section class="container-child">
@@ -51,6 +51,7 @@
         <output type="text" id="MilkValue" value="">0</output> / week
       </div>
     </div>
+    <div class="impacts" id="impacts_container">
       <div class="row">
         <div class="col-md-2 col-sm-2 offset-md-1 layered_earth">
           <img class="impact_top img-fluid" src="{% static 'img/co2.png' %}" alt="bag-calc" height="50%" id = "earth-base">
@@ -66,7 +67,7 @@
         <div class="col-md-8 offset-md-1">
           <br><br><br><h1><output type="text" id="TreeValue" value="">0</output> trees cut per year<sup>*</sup></h1>
           That's oxygen for <strong><output style= "color:green" type="text" id="TreeOxyVal" value="">0</output></strong> families of four lost for a year
-          <br>or what a car will produce while travelling <strong><output style= "color:green" type="text" id="CarCO2Val" value="">0</output></strong> kilometers!
+          <br>This number of trees is enough to clear an MCG's worth of forest in <strong><output style= "color:green" type="text" id="TreeVal" value=""></output></strong> years!
         </div>
         <div class="col-md-2 col-sm-2 offset-md-1">
           <br>
@@ -74,6 +75,7 @@
         </div>
 
       </div>
+    </div>
   </section>
 </div>
 {% endblock %}

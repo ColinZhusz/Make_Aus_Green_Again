@@ -363,3 +363,7 @@ iframe[seamless] {
 .container-child {
   scroll-behavior: smooth;
 }
+
+.impacts {
+  opacity: 0;
+}
