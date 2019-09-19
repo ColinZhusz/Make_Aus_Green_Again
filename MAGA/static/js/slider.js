@@ -1,5 +1,9 @@
 window.onload = function()
 {
+  // Function to format money_value
+  function formatMoney(x) {
+    return x.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
   //Set the images to grayscale 100 on load
   document.getElementById("pBagImage").style.filter = "grayscale(100%)";
   document.getElementById("DiaperImage").style.filter = "grayscale(100%)";
@@ -17,6 +21,7 @@ window.onload = function()
   var coffee_output = document.getElementById("CoffeeValue"); // Coffee value
   var milk_slider = document.getElementById("Milk"); //  Milk slider
   var milk_output = document.getElementById("MilkValue"); // Milk value
+  var money_value = document.getElementById("MoneyValue"); //Money Value
 
   //Get the values of the impact scales
   var co2_scale = document.getElementById("CO2Value");
@@ -48,6 +53,13 @@ window.onload = function()
               0.0021*parseInt(milk_slider.value)*52;
     tree_scale.innerHTML = (trees).toFixed(2);
 
+    //Set the Money Scale Values
+    var money = 0.0086*parseInt(pbag_slider.value)*52 +
+              0.5*parseInt(diaper_slider.value)*52 +
+              3.72*parseInt(coffee_slider.value)*52 +
+              0.041*parseInt(milk_slider.value)*52;
+    money_value.innerHTML = (formatMoney(money));
+
     // Set grayscale for the tree image according to the value
     var gray_trees = (trees/20)*100;
     document.getElementById("TreeImage").style.filter = "grayscale("+gray_trees+"%)";
@@ -57,6 +69,7 @@ window.onload = function()
     document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
     document.getElementById("TreeOxyVal").innerHTML = (trees/2).toFixed(2);
     document.getElementById("TreeVal").innerHTML = (300/trees).toFixed(2);
+    document.getElementById("HolidayVal").innerHTML = (money/120).toFixed(0);
 
     // compare with the national average
     if ((co2/1000) > 22 ){
@@ -97,11 +110,19 @@ window.onload = function()
               0.0021*parseInt(milk_slider.value)*52;
     tree_scale.innerHTML = (trees).toFixed(2);
 
+    //Set the Money Scale Values
+    var money = 0.0086*parseInt(pbag_slider.value)*52 +
+              0.5*parseInt(diaper_slider.value)*52 +
+              3.72*parseInt(coffee_slider.value)*52 +
+              0.041*parseInt(milk_slider.value)*52;
+    money_value.innerHTML = (formatMoney(money));
+
     // calculate impact alternatives
     document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
     document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
     document.getElementById("TreeOxyVal").innerHTML = (trees/2).toFixed(2);
     document.getElementById("TreeVal").innerHTML = (300/trees).toFixed(2);
+    document.getElementById("HolidayVal").innerHTML = (money/120).toFixed(0);
 
     // Set grayscale for the tree image according to the value
     var gray_trees = (trees/20)*100;
@@ -146,11 +167,19 @@ window.onload = function()
               0.0021*parseInt(milk_slider.value)*52;
     tree_scale.innerHTML = (trees).toFixed(2);
 
+    //Set the Money Scale Values
+    var money = 0.0086*parseInt(pbag_slider.value)*52 +
+              0.5*parseInt(diaper_slider.value)*52 +
+              3.72*parseInt(coffee_slider.value)*52 +
+              0.041*parseInt(milk_slider.value)*52;
+    money_value.innerHTML = (formatMoney(money));
+
     // calculate impact alternatives
     document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
     document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
     document.getElementById("TreeOxyVal").innerHTML = (trees/2).toFixed(2);
     document.getElementById("TreeVal").innerHTML = (300/trees).toFixed(2);
+    document.getElementById("HolidayVal").innerHTML = (money/120).toFixed(0);
 
     // Set grayscale for the tree image according to the value
     var gray_trees = (trees/20)*100;
@@ -179,7 +208,7 @@ window.onload = function()
     document.getElementById("impacts_container").style.transition = "opacity 1.5s";
 
     milk_output.innerHTML = this.value;
-    var grey = (((5 - this.value)/5)*100).toString();
+    var grey = (((10 - this.value)/10)*100).toString();
     document.getElementById("MilkImage").style.filter = "grayscale("+grey+"%)";
 
     //Set the CO2 scale values
@@ -196,11 +225,19 @@ window.onload = function()
               0.0021*parseInt(milk_slider.value)*52;
     tree_scale.innerHTML = (trees).toFixed(2);
 
+    //Set the Money Scale Values
+    var money = 0.0086*parseInt(pbag_slider.value)*52 +
+              0.5*parseInt(diaper_slider.value)*52 +
+              3.72*parseInt(coffee_slider.value)*52 +
+              0.041*parseInt(milk_slider.value)*52;
+    money_value.innerHTML = (formatMoney(money)).toFixed(2);
+
     // calculate impact alternatives
     document.getElementById("TreeCO2Val").innerHTML = (co2/6000).toFixed(2);
     document.getElementById("CarCO2Val").innerHTML = (co2/170).toFixed(2);
     document.getElementById("TreeOxyVal").innerHTML = (trees/2).toFixed(2);
     document.getElementById("TreeVal").innerHTML = (300/trees).toFixed(2);
+    document.getElementById("HolidayVal").innerHTML = (money/120).toFixed(0);
 
     // Set grayscale for the tree image according to the value
     var gray_trees = (trees/20)*100;

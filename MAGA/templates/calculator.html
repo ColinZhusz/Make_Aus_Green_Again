@@ -43,10 +43,10 @@
         <output type="text" id="CoffeeValue" value="">0</output> / week
       </div>
       <div class="col-md-2 col-sm-2 offset-md-1">
-        <img class="img-fluid" src="{% static 'img/milk.png' %}" alt="coffee-calc" height="30%" id="MilkImage">
-        <strong> Milk Bottles </strong>
+        <img class="img-fluid" src="{% static 'img/wetwipes.png' %}" alt="coffee-calc" height="30%" id="MilkImage">
+        <strong> Wet Wipes (pack of 10)</strong>
         <div class="slidecontainer">
-          <input type="range" min="0" max="5" value="0" class="slider" id="Milk">
+          <input type="range" min="0" max="10" value="0" class="slider" id="Milk">
         </div>
         <output type="text" id="MilkValue" value="">0</output> / week
       </div>
@@ -73,7 +73,18 @@
           <br>
           <img class="img-fluid" src="{% static 'img/tree.png' %}" alt="tree-calc" height="30%" id="TreeImage">
         </div>
-
+      </div>
+      <div class="row text-center">
+        <br>
+        <div class="col-md-2 col-sm-2 offset-md-1">
+          <img class="impact_top img-fluid" src="{% static 'img/plane.png' %}" alt="bag-calc" height="50%" id = "earth-base">
+        </div>
+        <div class="col-md-8 offset-md-1">
+          <br><h1>$<output type="text" id="MoneyValue" value=""></output> could be saved per year by using alternatives<sup>*</sup></h1>
+          <br>This could help fund a holiday for <strong><output style= "color:green" type="text" id="HolidayVal" value="">0</output></strong> days with your family.
+          <br>or what a car will produce while travelling <strong><output style= "color:green" type="text" id="CarCO2Val" value="">0</output></strong> kilometers!
+          <br><strong><output type="text" id="CO2result" value=""></output></strong>
+        </div>
       </div>
     </div>
   </section>
