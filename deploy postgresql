@@ -45,3 +45,6 @@ DROP TABLE test1;
 
 #delete one row
 DELETE FROM test1 WHERE id = '01';
+
+#update row
+UPDATE 'id' SET name = 'red' WHERE id = '01';
