@@ -39,5 +39,9 @@ CREATE TABLE test1 (
 INSERT INTO test1 VALUES ('01', 'James', 'male');
 # select
 SELECT * FROM test1;
+
 #delete table
 DROP TABLE test1;
+
+#delete one row
+DELETE FROM test1 WHERE id = '01';
