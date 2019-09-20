@@ -1,0 +1,42 @@
+connect to different database
+psql -d name
+
+CREATE USER postgres_user WITH PASSWORD 'password';
+CREATE DATABASE my_postgres_db OWNER postgres_user;
+
+#install
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+
+#Switching Over to the postgres Account
+sudo -i -u postgres
+
+#Creating a New Role
+createuser --interactive
+type name kevin1
+
+#Creating a New Database
+createdb kevin1
+
+#create a new user in linux
+quit (quit postgres)
+then in original linux server
+
+sudo adduser kevin1
+
+#login as kevin1
+sudo -i -u kevin1
+psql
+
+
+#create table
+CREATE TABLE test1 (
+	user_id numeric(10) PRIMARY KEY,
+	name varchar (50) NOT NULL,
+	gender varchar (25) NOT NULL
+	);
+  
+# insert delete update
+INSERT INTO test1 VALUES ('01', 'James', 'male');
+# select
+SELECT * FROM test1;
