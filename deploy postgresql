@@ -33,6 +33,9 @@ DATABASES = {
     }
 }
 
+# cd project
+python manage.py makemigrations
+python manage.py migrate
 
 #create table
 CREATE TABLE test1 (
