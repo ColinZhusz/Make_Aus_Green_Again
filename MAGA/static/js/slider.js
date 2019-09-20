@@ -70,7 +70,6 @@ window.onload = function()
     document.getElementById("TreeOxyVal").innerHTML = (trees/2).toFixed(2);
     document.getElementById("TreeVal").innerHTML = (300/trees).toFixed(2);
     document.getElementById("HolidayVal").innerHTML = (money/120).toFixed(0);
-    document.getElementById("GroceryVal").innerHTML = (money/400).toFixed(0);
 
     // compare with the national average
     if ((co2/1000) > 22 ){
@@ -124,7 +123,6 @@ window.onload = function()
     document.getElementById("TreeOxyVal").innerHTML = (trees/2).toFixed(2);
     document.getElementById("TreeVal").innerHTML = (300/trees).toFixed(2);
     document.getElementById("HolidayVal").innerHTML = (money/120).toFixed(0);
-    document.getElementById("GroceryVal").innerHTML = (money/400).toFixed(0);
 
     // Set grayscale for the tree image according to the value
     var gray_trees = (trees/20)*100;
@@ -182,7 +180,6 @@ window.onload = function()
     document.getElementById("TreeOxyVal").innerHTML = (trees/2).toFixed(2);
     document.getElementById("TreeVal").innerHTML = (300/trees).toFixed(2);
     document.getElementById("HolidayVal").innerHTML = (money/120).toFixed(0);
-    document.getElementById("GroceryVal").innerHTML = (money/400).toFixed(0);
 
     // Set grayscale for the tree image according to the value
     var gray_trees = (trees/20)*100;
@@ -241,7 +238,6 @@ window.onload = function()
     document.getElementById("TreeOxyVal").innerHTML = (trees/2).toFixed(2);
     document.getElementById("TreeVal").innerHTML = (300/trees).toFixed(2);
     document.getElementById("HolidayVal").innerHTML = (money/120).toFixed(0);
-    document.getElementById("GroceryVal").innerHTML = (money/400).toFixed(0);
 
     // Set grayscale for the tree image according to the value
     var gray_trees = (trees/20)*100;
