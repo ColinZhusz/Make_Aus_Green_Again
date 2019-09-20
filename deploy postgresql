@@ -1,6 +1,5 @@
 connect to different database
 psql -d name
-
 CREATE USER postgres_user WITH PASSWORD 'password';
 CREATE DATABASE my_postgres_db OWNER postgres_user;
 
@@ -40,3 +39,5 @@ CREATE TABLE test1 (
 INSERT INTO test1 VALUES ('01', 'James', 'male');
 # select
 SELECT * FROM test1;
+#delete table
+DROP TABLE test1;
