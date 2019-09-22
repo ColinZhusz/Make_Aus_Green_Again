@@ -9,7 +9,7 @@ sudo -i -u postgres
 psql
 
 #Create database in postgres
-CREATE DATABASE Make_Aus_Green_Again
+CREATE DATABASE Make_Aus_Green_Again;
 
 #create user and password
 CREATE USER Kevin WITH PASSWORD 'E09NB';
