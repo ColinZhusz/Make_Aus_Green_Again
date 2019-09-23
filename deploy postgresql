@@ -1,6 +1,7 @@
 #install
 sudo apt update
 sudo apt install postgresql postgresql-contrib
+pip3 install Pillow pip psycopg2 pytz setuptools sqlparse wheel
 
 #Switching Over to the postgres Account
 sudo -i -u postgres
