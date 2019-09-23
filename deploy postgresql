@@ -1,0 +1,60 @@
+#install
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+pip3 install Pillow pip psycopg2 pytz setuptools sqlparse wheel
+
+#Switching Over to the postgres Account
+sudo -i -u postgres
+
+#go into postgres prompt
+psql
+
+#Create database in postgres
+CREATE DATABASE Make_Aus_Green_Again;
+
+#create user and password
+CREATE USER Kevin WITH PASSWORD 'E09NB';
+
+ALTER ROLE Kevin SET client_encoding TO 'utf8';
+ALTER ROLE Kevin SET default_transaction_isolation TO 'read committed';
+ALTER ROLE Kevin SET timezone TO 'UTC';
+
+GRANT ALL PRIVILEGES ON DATABASE Make_Aus_Green_Again TO Kevin;
+
+
+#settings.py in django
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'Make_Aus_Green_Again',
+        'USER': 'Kevin',
+        'PASSWORD': 'E09NB',
+        'HOST': 'ip address',
+        'PORT': '5432',
+    }
+}
+
+# cd project
+python manage.py makemigrations
+python manage.py migrate
+
+#create table
+CREATE TABLE test1 (
+	user_id numeric(10) PRIMARY KEY,
+	name varchar (50) NOT NULL,
+	gender varchar (25) NOT NULL
+	);
+  
+# insert delete update
+INSERT INTO test1 VALUES ('01', 'James', 'male');
+# select
+SELECT * FROM test1;
+
+#delete table
+DROP TABLE test1;
+
+#delete one row
+DELETE FROM test1 WHERE id = '01';
+
+#update row
+UPDATE 'id' SET name = 'red' WHERE id = '01';

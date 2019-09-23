@@ -351,3 +351,19 @@ iframe[seamless] {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.TreeCO2 {
+  color: Green;
+}
+
+.container {
+  scroll-snap-type: mandatory;
+}
+
+.container-child {
+  scroll-behavior: smooth;
+}
+
+.impacts {
+  opacity: 0;
+}
