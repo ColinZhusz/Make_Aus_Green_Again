@@ -4,11 +4,11 @@ sudo apt-get install python3-venv
 python3 -m venv env
 source env/bin/activate
 pip3 install django
-git clone https://github.com/ColinZhusz/Make_Aus_Green_Again.git
-cd Make_Aus_Green_Again
+git clone https://github.com/ColinZhusz/MakeAusGreen.git
+cd MakeAusGreen
 pip3 install gunicorn
 sudo apt-get install -y nginx
-gunicorn --bind 0.0.0.0:8000 Make_AUS_Green_Again.wsgi:application
+gunicorn --bind 0.0.0.0:8000 MakeAusGreen.wsgi:application
 sudo apt-get install -y supervisor
 cd /etc/supervisor/conf.d/
 sudo touch gunicorn.conf
