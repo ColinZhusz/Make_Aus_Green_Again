@@ -19,3 +19,7 @@ pip install mysqlclient
 
 #create database table
 mysql -u root -p
+CREATE DATABASE maga;
+exit
+cd MakeAusGreen
+python manage.py migrate
