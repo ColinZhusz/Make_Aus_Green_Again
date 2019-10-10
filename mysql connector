@@ -15,3 +15,7 @@ brew install mysql-connector-c (need to install brew before)
 #install mysqlclient
 sudo apt install libmysqlclient-devsudo apt-get install python3.6-dev
 pip install mysqlclient
+
+
+#create database table
+mysql -u root -p
