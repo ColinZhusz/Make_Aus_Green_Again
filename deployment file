@@ -8,6 +8,7 @@ git clone https://github.com/ColinZhusz/MakeAusGreen.git
 cd MakeAusGreen
 pip3 install gunicorn
 sudo apt-get install -y nginx
+(装数据库 connecter 见其他file）
 gunicorn --bind 0.0.0.0:8000 MakeAusGreen.wsgi:application
 sudo apt-get install -y supervisor
 cd /etc/supervisor/conf.d/
