@@ -1,0 +1,9 @@
+# isntall mysql
+sudo apt install mysql-server
+sudo mysql_secure_installation
+sudo mysql
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+FLUSH PRIVILEGES;
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+exit
