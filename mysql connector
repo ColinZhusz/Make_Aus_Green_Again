@@ -9,7 +9,8 @@ SELECT user,authentication_string,plugin,host FROM mysql.user;
 exit
 
 #install mysql-connector-c
-brew install mysql-connector-c (need to install brew before)
+sudo apt install linuxbrew-wrapperbrew 
+install mysql-connector-c (need to install brew before)
 (ctrl d)
 
 #install mysqlclient
