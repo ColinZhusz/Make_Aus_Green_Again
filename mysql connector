@@ -1,3 +1,4 @@
+# pip install Pillow
 # install mysql
 sudo apt install mysql-server
 sudo mysql_secure_installation
@@ -25,3 +26,4 @@ CREATE DATABASE maga;
 exit
 cd MakeAusGreen
 python manage.py migrate
+
